@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGSimulator", "RPGSimulator\RPGSimulator.csproj", "{CFF44115-D385-499C-8114-B77A04706A4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGSimulatorCommon", "RPGSimulatorCommon\RPGSimulatorCommon.csproj", "{BBF7A065-9C62-4890-B31D-BFAFDD14F21C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CFF44115-D385-499C-8114-B77A04706A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFF44115-D385-499C-8114-B77A04706A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFF44115-D385-499C-8114-B77A04706A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF7A065-9C62-4890-B31D-BFAFDD14F21C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF7A065-9C62-4890-B31D-BFAFDD14F21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF7A065-9C62-4890-B31D-BFAFDD14F21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF7A065-9C62-4890-B31D-BFAFDD14F21C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

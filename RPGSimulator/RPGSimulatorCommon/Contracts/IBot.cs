@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Contracts
 {
-    interface IUsable
+    interface IBot
     {
-        void Use();
+        void DoTurn(IGameController controller);
     }
 }
