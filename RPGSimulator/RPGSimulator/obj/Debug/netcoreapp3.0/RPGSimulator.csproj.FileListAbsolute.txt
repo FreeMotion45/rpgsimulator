@@ -1,0 +1,11 @@
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulator.exe
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulator.deps.json
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulator.runtimeconfig.json
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulator.runtimeconfig.dev.json
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulator.dll
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulator.pdb
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.csprojAssemblyReference.cache
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.AssemblyInfoInputs.cache
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.AssemblyInfo.cs
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.dll
+D:\Local\Visual Studio Repos\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.pdb
