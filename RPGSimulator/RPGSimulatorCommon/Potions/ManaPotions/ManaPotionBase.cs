@@ -13,9 +13,11 @@ namespace RPGSimulatorCommon.Potions.ManaPotions
     {
         public PotionType PotionType => PotionType.Mana;
 
-        public void Use(CharacterState characterState)
+        public CharacterState Owner { get; internal set; }
+
+        public void Use()
         {
-            Mana characterMana = characterState.Mana;
+            Mana characterMana = Owner.Mana;
 
             characterMana.CurrentMana += CalculateManaAmount();
 

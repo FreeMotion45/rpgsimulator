@@ -13,9 +13,11 @@ namespace RPGSimulatorCommon.Potions.HealthPotions
     {
         public PotionType PotionType => PotionType.Health;
 
-        public void Use(CharacterState characterState)
+        public CharacterState Owner { get; internal set; }
+
+        public void Use()
         {
-            Health characterHealth = characterState.Health;
+            Health characterHealth = Owner.Health;
 
             characterHealth.CurrentHealth += CalculateHealingAmount();
 

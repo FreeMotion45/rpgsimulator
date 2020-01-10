@@ -34,15 +34,6 @@ namespace RPGSimulatorCommon.Character.States
             }
         }
 
-        public IUsable Pop(Type itemType)
-        {
-            lock (_invLock)
-            {
-                IUsable foundItem = _items.Find(item => item.GetType() == itemType);                
-                return foundItem;
-            }
-        }
-
         public bool Exists(Type itemType)
         {
             lock (_invLock)

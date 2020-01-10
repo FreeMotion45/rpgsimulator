@@ -9,6 +9,7 @@ namespace RPGSimulatorCommon.Contracts
 {
     interface IUsable
     {
-        void Use(CharacterState characterState);
+        CharacterState Owner { get; }
+        void Use();
     }
 }
