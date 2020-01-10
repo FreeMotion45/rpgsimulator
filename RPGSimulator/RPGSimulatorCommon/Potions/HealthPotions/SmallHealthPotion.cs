@@ -8,6 +8,11 @@ namespace RPGSimulatorCommon.Potions.HealthPotions
 {
     public class SmallHealthPotion : HealthPotionBase
     {
+        public SmallHealthPotion() : base("Small Health")
+        {
+
+        }
+
         protected override int CalculateHealingAmount()
         {
             return 20;

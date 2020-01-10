@@ -1,10 +1,8 @@
 ﻿using RPGSimulator.Core.Abstractions;
 using RPGSimulatorCommon.Contracts;
-using System;
+using RPGSimulatorCommon.Contracts.Inventory;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RPGSimulator.Core.Modules
 {
@@ -12,22 +10,22 @@ namespace RPGSimulator.Core.Modules
     {
         public Inventory()
         {
-            Items = new List<IUsable>();
+            Items = new List<IItem>();
         }
 
-        public List<IUsable> Items { get; }
+        public List<IItem> Items { get; }
 
-        public void AddItem(IUsable itemToAdd)
+        public void AddItem(IItem itemToAdd)
         {
             Items.Add(itemToAdd);
         }
 
         public List<IPotion> GetPotions()
         {
-            return Items.Where(item => item.GetType() == typeof(IPotion)) as List<IPotion>;
+            return Items.Where(item => item.GetType() == typeof(IPotion)) as List<IPotion> ?? new List<IPotion>();
         }
 
-        public void RemoveItem(IUsable itemToRemove)
+        public void RemoveItem(IItem itemToRemove)
         {
             Items.Remove(itemToRemove);
         }

@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RPGSimulator.Core\RPGSimulator.Core.csproj" />
+    <ProjectReference Include="..\RPGSimulatorCommon\RPGSimulator.Common.csproj" />
+    <ProjectReference Include="..\TestBot\TestBot.csproj" />
+  </ItemGroup>
+
 </Project>

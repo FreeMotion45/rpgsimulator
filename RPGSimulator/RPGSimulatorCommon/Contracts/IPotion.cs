@@ -1,8 +1,9 @@
-﻿using RPGSimulatorCommon.Potions;
+﻿using RPGSimulatorCommon.Contracts.Inventory;
+using RPGSimulatorCommon.Potions;
 
 namespace RPGSimulatorCommon.Contracts
 {
-    public interface IPotion : IUsable
+    public interface IPotion : IItem
     {
         PotionType PotionType { get; }
     }

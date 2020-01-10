@@ -4,6 +4,37 @@
     "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj",
+        "projectName": "RPGSimulator.Core",
+        "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj",
+        "projectName": "RPGSimulator.Common",
+        "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +60,17 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
+                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj"
+              },
+              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              },
+              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
+                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -75,6 +116,26 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj",
+        "projectName": "TestBot",
+        "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

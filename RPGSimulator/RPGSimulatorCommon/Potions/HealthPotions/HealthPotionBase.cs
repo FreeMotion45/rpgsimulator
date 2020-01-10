@@ -1,19 +1,21 @@
 ﻿using RPGSimulatorCommon.Character;
 using RPGSimulatorCommon.Character.States;
 using RPGSimulatorCommon.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Potions.HealthPotions
 {
     public abstract class HealthPotionBase : IPotion
     {
+        public HealthPotionBase(string name="Health")
+        {
+            Name = name;
+        }
+
         public PotionType PotionType => PotionType.Health;
 
-        public void Use(CharacterState target)
+        public string Name { get; }
+
+        public void Use(ICharacter target)
         {
             Health characterHealth = target.Health;
 

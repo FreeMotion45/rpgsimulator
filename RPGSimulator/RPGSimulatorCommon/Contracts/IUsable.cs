@@ -4,6 +4,6 @@ namespace RPGSimulatorCommon.Contracts
 {
     public interface IUsable
     {
-        void Use(CharacterState target);
+        void Use(ICharacter target);
     }
 }

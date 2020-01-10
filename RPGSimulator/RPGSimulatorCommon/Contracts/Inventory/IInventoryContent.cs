@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace RPGSimulatorCommon.Contracts
+namespace RPGSimulatorCommon.Contracts.Inventory
 {
     public interface IInventoryContent
     {
-        List<IUsable> Items { get; }
+        List<IItem> Items { get; }
 
         List<IPotion> GetPotions();
     }

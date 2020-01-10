@@ -1,11 +1,65 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "RPGSimulator.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RPGSimulator.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPGSimulator.Common.dll": {}
+        }
+      },
+      "RPGSimulator.Core/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "RPGSimulator.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RPGSimulator.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPGSimulator.Core.dll": {}
+        }
+      },
+      "TestBot/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "RPGSimulator.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TestBot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestBot.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RPGSimulator.Common/1.0.0": {
+      "type": "project",
+      "path": "../RPGSimulatorCommon/RPGSimulator.Common.csproj",
+      "msbuildProject": "../RPGSimulatorCommon/RPGSimulator.Common.csproj"
+    },
+    "RPGSimulator.Core/1.0.0": {
+      "type": "project",
+      "path": "../RPGSimulator.Core/RPGSimulator.Core.csproj",
+      "msbuildProject": "../RPGSimulator.Core/RPGSimulator.Core.csproj"
+    },
+    "TestBot/1.0.0": {
+      "type": "project",
+      "path": "../TestBot/TestBot.csproj",
+      "msbuildProject": "../TestBot/TestBot.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "RPGSimulator.Common >= 1.0.0",
+      "RPGSimulator.Core >= 1.0.0",
+      "TestBot >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Sean\\.nuget\\packages\\": {},
@@ -36,7 +90,17 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
+              "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj"
+            },
+            "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+              "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+            },
+            "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
+              "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

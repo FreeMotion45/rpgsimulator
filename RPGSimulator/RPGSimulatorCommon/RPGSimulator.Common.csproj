@@ -41,16 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Character\CharacterState.cs" />
+    <Compile Include="Character\ICharacter.cs" />
     <Compile Include="Character\States\Health.cs" />
-    <Compile Include="Character\States\Inventory.cs" />
-    <Compile Include="Character\States\InventoryTabs\PotionManager.cs" />
     <Compile Include="Character\States\Mana.cs" />
     <Compile Include="Contracts\IBot.cs" />
     <Compile Include="Contracts\IGameController.cs" />
+    <Compile Include="Contracts\Inventory\IInventoryContent.cs" />
+    <Compile Include="Contracts\Inventory\IItem.cs" />
     <Compile Include="Contracts\IPotion.cs" />
     <Compile Include="Contracts\IUsable.cs" />
-    <Compile Include="Game.cs" />
     <Compile Include="Potions\HealthPotions\HealthPotionBase.cs" />
     <Compile Include="Potions\HealthPotions\SmallHealthPotion.cs" />
     <Compile Include="Potions\ItemType.cs" />

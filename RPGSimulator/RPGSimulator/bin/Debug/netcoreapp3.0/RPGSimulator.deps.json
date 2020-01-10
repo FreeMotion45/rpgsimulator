@@ -7,14 +7,55 @@
   "targets": {
     ".NETCoreApp,Version=v3.0": {
       "RPGSimulator/1.0.0": {
+        "dependencies": {
+          "RPGSimulator.Common": "1.0.0",
+          "RPGSimulator.Core": "1.0.0",
+          "TestBot": "1.0.0"
+        },
         "runtime": {
           "RPGSimulator.dll": {}
+        }
+      },
+      "RPGSimulator.Common/1.0.0": {
+        "runtime": {
+          "RPGSimulatorCommon.dll": {}
+        }
+      },
+      "RPGSimulator.Core/1.0.0": {
+        "dependencies": {
+          "RPGSimulator.Common": "1.0.0"
+        },
+        "runtime": {
+          "RPGSimulator.Core.dll": {}
+        }
+      },
+      "TestBot/1.0.0": {
+        "dependencies": {
+          "RPGSimulator.Common": "1.0.0"
+        },
+        "runtime": {
+          "TestBot.dll": {}
         }
       }
     }
   },
   "libraries": {
     "RPGSimulator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RPGSimulator.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RPGSimulator.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TestBot/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

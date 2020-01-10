@@ -6,19 +6,19 @@ namespace RPGSimulator.Core.Modules
 {
     public class Game : IGameController
     {
-        public Game(CharacterState you, CharacterState enemy)
+        public Game(ICharacter you, ICharacter enemy)
         {
-            You = you;
+            Self = you;
             Enemy = enemy;
         }
 
-        public CharacterState You { get; }
+        public ICharacter Self { get; }
 
-        public CharacterState Enemy { get; }
+        public ICharacter Enemy { get; }
 
         public void UsePotion(IPotion potion)
         {
-            potion.Use(You);
+            potion.Use(Self);
         }
 
         public void UseSkill()
