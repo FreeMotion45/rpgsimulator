@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RPGSimulatorCommon.Contracts;
 
 namespace TestBot
 {
-    class Bot
+    class Bot : IBot
     {
+        public void DoTurn(IGameController controller)
+        {
+
+        }
     }
 }
