@@ -14,7 +14,7 @@ namespace RPGSimulatorCommon.Character.States
             CurrentMana = currentMana;
         }
 
-        public int MaxMana { get; }
-        public int CurrentMana { get; }
+        public int MaxMana { get; internal set; }
+        public int CurrentMana { get; internal set; }
     }
 }
