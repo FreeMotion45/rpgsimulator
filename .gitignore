@@ -134,3 +134,13 @@ $RECYCLE.BIN/
 
 _NCrunch*
 RPGSimulator/.vs/RPGSimulator/v16/Server/sqlite3/db.lock
+RPGSimulator/.vs/RPGSimulator/v16/.suo
+RPGSimulator/.vs/RPGSimulator/v16/.suo
+*.lock
+*.cache
+*.dll
+*.pdb
+*.json
+*.cache
+*.exe
+*.props
