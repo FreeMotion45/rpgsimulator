@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Potions
 {
-    enum PotionType
+    public enum PotionType
     {
         Mana,
         Health

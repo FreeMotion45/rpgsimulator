@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Potions.ManaPotions
 {
-    abstract class ManaPotionBase : IPotion
+    public abstract class ManaPotionBase : IPotion
     {
         public PotionType PotionType => PotionType.Mana;
 

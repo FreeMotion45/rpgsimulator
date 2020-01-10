@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Character.States
 {
-    class Inventory
+    public class Inventory
     {
         private readonly object _invLock;
         private readonly List<IUsable> _items;

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Character
 {
-    class CharacterState
+    public class CharacterState
     {
         public Health Health { get; }
         public Mana Mana { get; }

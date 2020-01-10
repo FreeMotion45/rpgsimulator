@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Character.States
 {
-    class Health
+    public class Health
     {
         public Health(int maxHealth, int currentHealth)
         {

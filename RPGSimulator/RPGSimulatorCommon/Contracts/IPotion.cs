@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Contracts
 {
-    interface IPotion : IUsable
+    public interface IPotion : IUsable
     {
         PotionType PotionType { get; }
     }

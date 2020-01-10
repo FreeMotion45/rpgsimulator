@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Character.States
 {
-    class Mana
+    public class Mana
     {
         public Mana(int maxMana, int currentMana)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Contracts
 {
-    interface IUsable
+    public interface IUsable
     {
         void Use(CharacterState target);
     }

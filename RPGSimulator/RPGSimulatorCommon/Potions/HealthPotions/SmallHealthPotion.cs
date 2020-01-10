@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Potions.HealthPotions
 {
-    class SmallHealthPotion : HealthPotionBase
+    public class SmallHealthPotion : HealthPotionBase
     {
         protected override int CalculateHealingAmount()
         {

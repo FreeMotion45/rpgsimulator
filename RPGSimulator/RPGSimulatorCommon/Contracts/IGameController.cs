@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Contracts
 {
-    interface IGameController
+    public interface IGameController
     {
         CharacterState You { get; }
         CharacterState Enemy { get; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Potions.ManaPotions
 {
-    class SmallManaPotion : ManaPotionBase
+    public class SmallManaPotion : ManaPotionBase
     {
         protected override int CalculateManaAmount()
         {
