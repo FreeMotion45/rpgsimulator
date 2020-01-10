@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Local\\Visual Studio Repos\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
+      "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
       "projectName": "RPGSimulator",
-      "projectPath": "D:\\Local\\Visual Studio Repos\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
+      "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
       "packagesPath": "C:\\Users\\Emanuel\\.nuget\\packages\\",
-      "outputPath": "D:\\Local\\Visual Studio Repos\\RPGSimulator\\RPGSimulator\\obj\\",
+      "outputPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
