@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Potions.HealthPotions
 {
-    abstract class HealthPotion : IPotion
+    abstract class HealthPotionBase : IPotion
     {
         public PotionType PotionType => PotionType.Health;
 

@@ -16,10 +16,5 @@ namespace RPGSimulatorCommon.Character.States.InventoryTabs
         {
             _inventory = inventory;
         }
-
-        public IPotion PopPotion(PotionType potionType)
-        {
-            
-        }
     }
 }
