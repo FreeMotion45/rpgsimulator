@@ -3,6 +3,6 @@ namespace RPGSimulatorCommon.Contracts
 {
     public interface IBot
     {
-        void DoTurn(IGameController controller);
+        void DoTurn(IGameController game);
     }
 }

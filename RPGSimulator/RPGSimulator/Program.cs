@@ -4,6 +4,7 @@ using RPGSimulatorCommon.Character.States;
 using RPGSimulatorCommon.Contracts;
 using RPGSimulatorCommon.Contracts.Inventory;
 using RPGSimulatorCommon.Potions.HealthPotions;
+using RPGSimulatorCommon.Potions.ManaPotions;
 using System;
 using TestBot;
 
@@ -15,6 +16,7 @@ namespace RPGSimulator
         {
             IInventoryContent inventory = new Inventory();
             inventory.Items.Add(new SmallHealthPotion());
+            inventory.Items.Add(new SmallManaPotion());
 
             ICharacter character1 = new Character(
                 new Health(100, 100),
