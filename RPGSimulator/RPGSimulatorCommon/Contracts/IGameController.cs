@@ -13,6 +13,6 @@ namespace RPGSimulatorCommon.Contracts
         CharacterState Enemy { get; }
 
         void UseSkill();
-        void UsePotion();
+        void UsePotion(IPotion potion);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using RPGSimulatorCommon.Character;
 using RPGSimulatorCommon.Contracts;
+using RPGSimulatorCommon.Potions.HealthPotions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +21,10 @@ namespace RPGSimulatorCommon
 
         public CharacterState Enemy { get; }
 
-        public void UsePotion()
+        public void UsePotion(IPotion potion)
         {
-            throw new NotImplementedException();
+            You.Inventory.Remove(potion);
+            potion.Use(You);
         }
 
         public void UseSkill()

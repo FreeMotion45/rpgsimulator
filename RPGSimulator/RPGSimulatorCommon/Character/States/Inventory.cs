@@ -10,15 +10,15 @@ namespace RPGSimulatorCommon.Character.States
     class Inventory
     {
         private readonly object _invLock;
-        private readonly List<UsableBase> _items;
+        private readonly List<IUsable> _items;
 
-        public Inventory(List<UsableBase> items)
+        public Inventory(List<IUsable> items)
         {
             _invLock = new object();
             _items = items;
         }
 
-        public void Add(UsableBase item)
+        public void Add(IUsable item)
         {
             lock (_invLock)
             {
@@ -26,7 +26,7 @@ namespace RPGSimulatorCommon.Character.States
             }
         }
 
-        internal void Remove(UsableBase itemToRemove)
+        internal void Remove(IUsable itemToRemove)
         {
             lock (_invLock)
             {
@@ -34,7 +34,7 @@ namespace RPGSimulatorCommon.Character.States
             }
         }
 
-        public IEnumerable<UsableBase> GetInventory()
+        public IEnumerable<IUsable> GetInventory()
         {
             lock (_invLock)
             {

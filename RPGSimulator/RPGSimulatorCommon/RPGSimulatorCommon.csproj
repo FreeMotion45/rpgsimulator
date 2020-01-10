@@ -50,7 +50,6 @@
     <Compile Include="Contracts\IGameController.cs" />
     <Compile Include="Contracts\IPotion.cs" />
     <Compile Include="Contracts\IUsable.cs" />
-    <Compile Include="Contracts\UsableBase.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Potions\HealthPotions\HealthPotionBase.cs" />
     <Compile Include="Potions\HealthPotions\SmallHealthPotion.cs" />

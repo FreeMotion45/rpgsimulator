@@ -1,4 +1,5 @@
 ﻿using RPGSimulatorCommon.Character.States;
+using RPGSimulatorCommon.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
