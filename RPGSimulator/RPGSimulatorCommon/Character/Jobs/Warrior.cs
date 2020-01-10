@@ -19,9 +19,11 @@ namespace RPGSimulatorCommon.Character.Jobs
             random = new Random();
         }
 
+        // This function should be called when initializing the bot's character
         public void AddBonusAttributes(ICharacter self)
         {
-            throw new NotImplementedException();
+            self.Health.MaxHealth = (int) (self.Health.MaxHealth * 1.2);
+            self.Health.CurrentHealth = self.Health.MaxHealth;
         }
 
         public void Attack(ICharacter target)
@@ -31,12 +33,17 @@ namespace RPGSimulatorCommon.Character.Jobs
 
         public void UseSpecialAbility(ICharacter target)
         {
-            throw new NotImplementedException();
+            target.Health.CurrentHealth -= CalculateSpecialAbilityDamage();
         }
 
         private int CalculateAttackDamage()
         {
             return random.Next(_minimumDamage, _maximumDamage);
+        }
+
+        private int CalculateSpecialAbilityDamage()
+        {
+            return random.Next(_minimumDamage * 2, _maximumDamage * 2);
         }
     }
 }
