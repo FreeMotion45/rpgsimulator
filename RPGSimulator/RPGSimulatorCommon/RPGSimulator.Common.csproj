@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character\ICharacter.cs" />
+    <Compile Include="Character\IHealth.cs" />
     <Compile Include="Contracts\IBot.cs" />
     <Compile Include="Contracts\IGameController.cs" />
     <Compile Include="Contracts\Inventory\IInventoryContent.cs" />
