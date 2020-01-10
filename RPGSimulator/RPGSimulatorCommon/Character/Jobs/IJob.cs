@@ -10,6 +10,6 @@ namespace RPGSimulatorCommon.Character.Jobs
     {
         void Attack(ICharacter target);
         void UseSpecialAbility(ICharacter target);
-        void AddBonusAttributes(ICharacter self);
+        void AddBonusAttributes(ICharacter self);        
     }
 }
