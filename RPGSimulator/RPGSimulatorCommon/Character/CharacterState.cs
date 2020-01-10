@@ -11,5 +11,6 @@ namespace RPGSimulatorCommon.Character
     {
         public Health Health { get; }
         public Mana Mana { get; }
+        public Inventory Inventory { get; }
     }
 }

@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Potions.ManaPotions
 {
-    abstract class ManaPotionBase : IPotion
+    abstract class ManaPotionBase : UsableBase
     {
         public PotionType PotionType => PotionType.Mana;
 
         public CharacterState Owner { get; internal set; }
 
-        public void Use()
+        protected override void EffectOwner()
         {
             Mana characterMana = Owner.Mana;
 
@@ -25,7 +25,7 @@ namespace RPGSimulatorCommon.Potions.ManaPotions
             {
                 characterMana.CurrentMana = characterMana.MaxMana;
             }
-        }
+        }        
 
         protected abstract int CalculateManaAmount();
     }

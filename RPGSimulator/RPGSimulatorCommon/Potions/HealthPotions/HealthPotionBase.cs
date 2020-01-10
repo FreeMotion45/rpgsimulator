@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Potions.HealthPotions
 {
-    abstract class HealthPotionBase : IPotion
+    abstract class HealthPotionBase : UsableBase
     {
         public PotionType PotionType => PotionType.Health;
 
         public CharacterState Owner { get; internal set; }
 
-        public void Use()
+        protected override void EffectOwner()
         {
             Health characterHealth = Owner.Health;
 
