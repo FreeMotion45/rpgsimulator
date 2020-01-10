@@ -14,7 +14,7 @@ namespace RPGSimulatorCommon.Character.States
             CurrentHealth = currentHealth;
         }
 
-        public int MaxHealth { get; internal set; }
-        public int CurrentHealth { get; internal set; }
+        public int MaxHealth { get; set; }
+        public int CurrentHealth { get; set; }
     }
 }
