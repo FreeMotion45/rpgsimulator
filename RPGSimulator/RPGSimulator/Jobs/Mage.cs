@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RPGSimulator.Core.Abstractions;
+using RPGSimulator.Core.Modules;
 
-namespace RPGSimulatorCommon.Character.Jobs
+namespace RPGSimulator.Jobs
 {
     public class Mage : IJob
     {
@@ -19,18 +21,18 @@ namespace RPGSimulatorCommon.Character.Jobs
             random = new Random();
         }
 
-        public void AddBonusAttributes(ICharacter self)
+        public void AddBonusAttributes(Character self)
         {
             self.Mana.MaxMana = (int) (self.Mana.MaxMana * 1.3);
             self.Mana.CurrentMana = self.Mana.MaxMana;
         }
 
-        public void Attack(ICharacter target)
+        public void Attack(Character target)
         {
             target.Health.CurrentHealth -= CalculateAttackDamage();
         }
 
-        public void UseSpecialAbility(ICharacter target)
+        public void UseSpecialAbility(Character target)
         {
             target.Health.CurrentHealth -= (int) (target.Health.CurrentHealth * 0.1);
             target.Mana.CurrentMana /= 2;

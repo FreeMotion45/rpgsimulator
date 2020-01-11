@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Character
 {
-    interface IMana
+    public interface IMana
     {
-        int MaxMana { get; internal set; }
-        int CurrentMana { get; internal set; }
+        int MaxMana { get; }
+        int CurrentMana { get; }
     }
 }

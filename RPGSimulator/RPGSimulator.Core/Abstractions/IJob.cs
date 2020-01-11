@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RPGSimulator.Core.Modules;
 
-namespace RPGSimulatorCommon.Character.Jobs
+namespace RPGSimulator.Core.Abstractions
 {
-    interface IJob
+    public interface IJob
     {
-        void Attack(ICharacter target);
-        void UseSpecialAbility(ICharacter target);
-        void AddBonusAttributes(ICharacter self);        
+        void Attack(Character target);
+        void UseSpecialAbility(Character target);
+        void AddBonusAttributes(Character self);        
     }
 }

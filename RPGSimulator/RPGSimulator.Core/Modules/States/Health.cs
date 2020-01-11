@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RPGSimulatorCommon.Character;
 
-namespace RPGSimulatorCommon.Character.States
+namespace RPGSimulator.Core.Modules.States
 {
-    public class Health
+    public class Health : IHealth
     {
         public Health(int maxHealth, int currentHealth)
         {

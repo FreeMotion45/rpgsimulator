@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RPGSimulatorCommon.Character;
 
-namespace RPGSimulatorCommon.Character.States
+namespace RPGSimulator.Core.Modules.States
 {
-    public class Mana
+    public class Mana : IMana
     {
         public Mana(int maxMana, int currentMana)
         {
@@ -14,7 +15,7 @@ namespace RPGSimulatorCommon.Character.States
             CurrentMana = currentMana;
         }
 
-        public int MaxMana { get; internal set; }
-        public int CurrentMana { get; internal set; }
+        public int MaxMana { get; set; }
+        public int CurrentMana { get; set; }
     }
 }

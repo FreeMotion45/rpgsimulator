@@ -1,5 +1,4 @@
 ﻿using RPGSimulatorCommon.Character;
-using RPGSimulatorCommon.Character.States;
 using RPGSimulatorCommon.Contracts;
 
 namespace RPGSimulatorCommon.Potions.ManaPotions
@@ -17,7 +16,7 @@ namespace RPGSimulatorCommon.Potions.ManaPotions
 
         public void Use(ICharacter target)
         {
-            Mana characterMana = target.Mana;
+            Mana characterMana = target.GetMana;
 
             characterMana.CurrentMana += CalculateManaAmount();
 

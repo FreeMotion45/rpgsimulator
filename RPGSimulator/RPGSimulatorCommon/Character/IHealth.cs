@@ -8,7 +8,7 @@ namespace RPGSimulatorCommon.Character
 {
     public interface IHealth
     {
-        int MaxHealth { get; set; }
-        int CurrentHealth { get; set; }
+        int MaxHealth { get; }
+        int CurrentHealth { get; }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using RPGSimulatorCommon.Character;
-using RPGSimulatorCommon.Character.States;
+using RPGSimulator.Core.Modules.States;
 using RPGSimulatorCommon.Contracts.Inventory;
 using System;
 using System.Collections.Generic;

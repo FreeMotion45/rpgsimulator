@@ -1,12 +1,11 @@
-﻿using RPGSimulatorCommon.Character.States;
-using RPGSimulatorCommon.Contracts.Inventory;
+﻿using RPGSimulatorCommon.Contracts.Inventory;
 
 namespace RPGSimulatorCommon.Character
 {
     public interface ICharacter
     {
-        Health Health { get; }
-        Mana Mana { get; }
+        IHealth GetHealth { get; }
+        IMana GetMana { get; }
         IInventoryContent Inventory { get; }
     }
 }
