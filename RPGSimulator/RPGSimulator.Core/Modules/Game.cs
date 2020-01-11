@@ -19,10 +19,10 @@ namespace RPGSimulator.Core.Modules
             GameState = GameState.Ready;
         }
 
-        public ICharacter Self { get; }
+        public ICharacter Self { get; set; }
         public Character ActualSelf { get => Self as Character; }
 
-        public ILimitedCharacter Enemy { get; }   
+        public ILimitedCharacter Enemy { get; set; }   
         public Character ActualEnemy { get => Enemy as Character; }
         
         public GameState GameState { get; set; }
@@ -31,6 +31,7 @@ namespace RPGSimulator.Core.Modules
         {
             ExceptIfAlreadyActed();
             potion.Use(Self);
+            Console.WriteLine(Self + " drank " + potion);
             _didAct = true;
             EvaluateGameState();
         }        
@@ -39,16 +40,25 @@ namespace RPGSimulator.Core.Modules
         {
             ExceptIfAlreadyActed();
             ((SkillBase) (skill)).UseSkill(ActualSelf, target as Character);
+            Console.WriteLine(Self + " used " + skill + " on " + target);
             _didAct = true;
             EvaluateGameState();
         }
 
-        public void NormalAttack(ILimitedCharacter target)
+        public void UseNormalAttack(ILimitedCharacter target)
         {
             ExceptIfAlreadyActed();
             (Self.Job as JobBase).Attack(ActualSelf, target as Character);
+            Console.WriteLine(Self + " used normal attack on " + target);
             _didAct = true;
             EvaluateGameState();
+        }
+
+        public void CyclePlayers()
+        {
+            ICharacter characterTemp = Self;
+            Self = Enemy as ICharacter;
+            Enemy = characterTemp;
         }
 
         private void ExceptIfAlreadyActed()

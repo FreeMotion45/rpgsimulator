@@ -7,5 +7,6 @@ namespace RPGSimulator.Common.Contracts
     {
         void DoTurn(IGameController game);
         IJob ChooseJob(IJobFactory jobFactory);
+        string ChooseName();
     }
 }

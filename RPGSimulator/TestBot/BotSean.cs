@@ -11,13 +11,14 @@ namespace TestBot
             return jobFactory.CreateJob(JobType.Warrior);
         }
 
+        public string ChooseName()
+        {
+            return "Sean";
+        }
+
         public void DoTurn(IGameController game)
         {
-            System.Console.WriteLine(game.Self.Job);
-            foreach (var item in game.Self.Inventory.GetPotions())
-            {
-                System.Console.WriteLine("Potion name: {0}, Potion type: {1}", item.Name, item.PotionType);
-            }
+            System.Console.WriteLine("I skipped my turn!");
         }
     }
 }

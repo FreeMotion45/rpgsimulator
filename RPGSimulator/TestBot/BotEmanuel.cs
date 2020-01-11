@@ -15,10 +15,14 @@ namespace TestBot
             return jobFactory.CreateJob(JobType.Mage);
         }
 
+        public string ChooseName()
+        {
+            return "Emanuel";
+        }
+
         public void DoTurn(IGameController game)
         {
-            Console.WriteLine("Emanuel is pro!");
-            game.NormalAttack(game.Enemy);
+            game.UseNormalAttack(game.Enemy);
         }
     }
 }

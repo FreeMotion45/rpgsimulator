@@ -14,8 +14,9 @@ namespace RPGSimulator.Core.Modules
 {
     public class Character : ICharacter
     {
-        public Character(Health health, Mana mana, IInventoryContent inventory)
+        public Character(string name, Health health, Mana mana, IInventoryContent inventory)
         {
+            Name = name;
             ActualHealth = health;
             ActualMana = mana;
             Inventory = inventory;
@@ -36,5 +37,10 @@ namespace RPGSimulator.Core.Modules
         public IMana Mana { get => ActualMana; }
 
         public IJob Job { get => ActualJob; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
