@@ -39,7 +39,7 @@ namespace RPGSimulator
 
             BotLoader botLoader = new BotLoader();
             SimulationRunner simulationRunner = new SimulationRunner(botLoader.LoadBots(), new JobFactory());
-            simulationRunner.SimulateTwoBots(new BotEmanuel(), new BotSean());
+            simulationRunner.RunAllSimulations();
         }
     }
 }

@@ -12,33 +12,29 @@ namespace RPGSimulator
 {
     class Simulation
     {
-        public IBot Bot1 { get; }
-        public IBot Bot2 { get; }
+        public List<Bot> ParticipatingBots { get; }
         public JobFactory JobFactory { get; }
 
-        public Simulation(IBot bot1, IBot bot2, JobFactory jobFactory)
+        public Simulation(List<Bot> participatingBots)
         {
-            Bot1 = bot1;
-            Bot2 = bot2;
-            JobFactory = jobFactory;
+            ParticipatingBots = participatingBots;
         }
 
         public void Run()
         {
-            List<Bot> bots = CreateBots();
-            Bot starter = ChooseStarter(bots);
-            List<Bot> otherBots = FindOtherBots(starter, bots);
+            Bot starter = ChooseStarter(ParticipatingBots);
+            List<Bot> otherBots = FindOtherBots(starter, ParticipatingBots);
 
             Game game = new Game(starter.Character, otherBots[0].Character);  
             
             while (game.GameState != GameState.Finished)
             {
-                Bot currentBot = bots.Find(bot => game.ActualSelf == bot.Character);
+                Bot currentBot = ParticipatingBots.Find(bot => game.ActualSelf == bot.Character);
                 currentBot.Controller.DoTurn(game);
                 game.CyclePlayers();                
             }
 
-            Console.WriteLine(FindWinner(bots).Character + " has won the game!");
+            Console.WriteLine(FindWinner(ParticipatingBots).Character + " has won the game!");
         }
 
         private Bot FindWinner(List<Bot> bots)
@@ -65,32 +61,6 @@ namespace RPGSimulator
         {
             Random random = new Random();
             return bots[random.Next(1, 2)];
-        }
-
-        private List<Bot> CreateBots()
-        {
-            List<Bot> bots = new List<Bot>();
-
-            Character bot1Character = new Character(Bot1.ChooseName(),
-                                        new Health(200, 200),
-                                        new Mana(100, 100),
-                                        new Inventory())
-            {
-                ActualJob = Bot1.ChooseJob(JobFactory) as JobBase
-            };
-
-            bots.Add(new Bot(bot1Character, Bot1));
-
-            Character bot2Character = new Character(Bot2.ChooseName(),
-                                        new Health(200, 200),
-                                        new Mana(100, 100),
-                                        new Inventory())
-            {
-                ActualJob = Bot2.ChooseJob(JobFactory) as JobBase
-            };
-
-            bots.Add(new Bot(bot2Character, Bot2));
-            return bots;
         }
     }
 }
