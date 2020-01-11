@@ -23,5 +23,9 @@ namespace RPGSimulator.Core.Modules
         public Mana Mana { get; }
 
         public IInventoryContent Inventory { get; }
+
+        public IHealth GetHealth => throw new NotImplementedException();
+
+        public IMana GetMana => throw new NotImplementedException();
     }
 }

@@ -9,5 +9,6 @@ namespace RPGSimulatorCommon.Contracts
 
         void UseSkill();
         void UsePotion(IPotion potion);
+        void UseSpecialAbility(ICharacter target);
     }
 }

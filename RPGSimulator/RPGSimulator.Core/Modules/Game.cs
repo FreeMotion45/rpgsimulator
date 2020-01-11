@@ -25,5 +25,10 @@ namespace RPGSimulator.Core.Modules
         {
             throw new NotImplementedException();
         }
+
+        public void UseSpecialAbility(ICharacter target)
+        {
+            
+        }
     }
 }

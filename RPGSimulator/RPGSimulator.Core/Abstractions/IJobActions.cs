@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RPGSimulator.Core.Modules;
+﻿using RPGSimulator.Core.Modules;
+using RPGSimulatorCommon.Contracts;
 
 namespace RPGSimulator.Core.Abstractions
 {
-    public interface IJob
+    public interface IJobActions : IJob
     {
         void Attack(Character target);
         void UseSpecialAbility(Character target);

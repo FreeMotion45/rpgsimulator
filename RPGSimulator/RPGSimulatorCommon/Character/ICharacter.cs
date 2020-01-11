@@ -1,4 +1,5 @@
-﻿using RPGSimulatorCommon.Contracts.Inventory;
+﻿using RPGSimulatorCommon.Contracts;
+using RPGSimulatorCommon.Contracts.Inventory;
 
 namespace RPGSimulatorCommon.Character
 {
@@ -7,5 +8,6 @@ namespace RPGSimulatorCommon.Character
         IHealth GetHealth { get; }
         IMana GetMana { get; }
         IInventoryContent Inventory { get; }
+        IJob Job { get; }
     }
 }

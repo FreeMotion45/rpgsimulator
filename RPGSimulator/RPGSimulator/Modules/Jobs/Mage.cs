@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using RPGSimulator.Core.Abstractions;
 using RPGSimulator.Core.Modules;
 
-namespace RPGSimulator.Jobs
+namespace RPGSimulator.Modules.Jobs
 {
-    public class Mage : IJob
+    public class Mage : IJobActions
     {
         public readonly int _minimumDamage;
         public readonly int _maximumDamage;
