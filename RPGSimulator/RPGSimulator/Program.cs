@@ -11,6 +11,8 @@ using TestBot;
 using RPGSimulator.Jobs;
 using RPGSimulator.Core.Abstractions;
 using RPGSimulator.Bots;
+using RPGSimulator.Simulator;
+using RPGSimulator.Simulator.SimulatorRunners;
 
 namespace RPGSimulator
 {
@@ -38,8 +40,8 @@ namespace RPGSimulator
             */
 
             BotLoader botLoader = new BotLoader();
-            SimulationRunner simulationRunner = new SimulationRunner(botLoader.LoadBots(), new JobFactory());
-            simulationRunner.RunAllSimulations();
+            MainSimulator simulator = new MainSimulator(botLoader.LoadBots(), new FullSimulationRunner(), new JobFactory());
+            simulator.Simulate();
         }
     }
 }
