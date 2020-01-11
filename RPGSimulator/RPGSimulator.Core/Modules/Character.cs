@@ -14,10 +14,11 @@ namespace RPGSimulator.Core.Modules
 {
     public class Character : ICharacter
     {
-        public Character(Health health, Mana mana, IInventoryContent inventory)
+        public Character(Health health, Mana mana, JobBase job, IInventoryContent inventory)
         {
             ActualHealth = health;
             ActualMana = mana;
+            ActualJob = job;
             Inventory = inventory;
         }
 
