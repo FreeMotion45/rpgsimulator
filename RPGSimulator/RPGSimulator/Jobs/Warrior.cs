@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RPGSimulator.Common.Character;
 using RPGSimulator.Core.Abstractions;
 using RPGSimulator.Core.Modules;
+using RPGSimulatorCommon.Character.Jobs;
 
 namespace RPGSimulator.Core.Modules.Jobs
 {
-    public class Warrior : IJob
+    public class Warrior : IJobExtended
     {
         public readonly int _minimumDamage;
         public readonly int _maximumDamage;
@@ -20,6 +22,8 @@ namespace RPGSimulator.Core.Modules.Jobs
             _maximumDamage = 15;
             random = new Random();
         }
+
+        public JobType JobType => JobType.Warrior;
 
         public void AddBonusAttributes(Character self)
         {

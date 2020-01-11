@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Character.Jobs
 {
-    public interface IJobFactory
+    public interface IJob
     {
-        IJob CreateJob(JobType jobType);
+        JobType JobType { get; }
     }
 }

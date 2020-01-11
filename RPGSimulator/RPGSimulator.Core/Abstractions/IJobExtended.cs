@@ -1,4 +1,5 @@
 ﻿using RPGSimulator.Core.Modules;
+using RPGSimulatorCommon.Character.Jobs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulator.Core.Abstractions
 {
-    public interface IJob
+    public interface IJobExtended : IJob
     {
         void Attack(Character target);
         void UseSpecialAbility(Character target);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPGSimulatorCommon.Character.Jobs
 {
-    enum JobType
+    public enum JobType
     {
         Mage,
         Warrior
