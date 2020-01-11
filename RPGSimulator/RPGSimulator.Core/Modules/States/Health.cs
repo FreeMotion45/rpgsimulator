@@ -1,12 +1,13 @@
-﻿using System;
+﻿using RPGSimulator.Common.Character.States;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGSimulator.Common.Character.States
+namespace RPGSimulator.Core.Modules.States
 {
-    public class Health
+    public class Health : IHealth
     {
         public Health(int maxHealth, int currentHealth)
         {
@@ -14,7 +15,7 @@ namespace RPGSimulator.Common.Character.States
             CurrentHealth = currentHealth;
         }
 
-        public int MaxHealth { get; internal set; }
-        public int CurrentHealth { get; internal set; }
+        public int MaxHealth { get; set; }
+        public int CurrentHealth { get; set; }
     }
 }

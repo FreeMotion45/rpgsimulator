@@ -5,6 +5,7 @@ using RPGSimulator.Common.Contracts;
 using RPGSimulator.Common.Contracts.Inventory;
 using RPGSimulator.Common.Potions.HealthPotions;
 using RPGSimulator.Common.Potions.ManaPotions;
+using RPGSimulator.Core.Modules.States;
 using System;
 using TestBot;
 

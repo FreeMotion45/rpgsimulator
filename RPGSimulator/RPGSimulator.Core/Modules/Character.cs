@@ -1,11 +1,12 @@
 ﻿using RPGSimulator.Common.Character;
-using RPGSimulator.Common.Character.States;
+using RPGSimulator.Core.Modules.States;
 using RPGSimulator.Common.Contracts.Inventory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RPGSimulator.Common.Character.States;
 
 namespace RPGSimulator.Core.Modules
 {
@@ -13,15 +14,19 @@ namespace RPGSimulator.Core.Modules
     {
         public Character(Health health, Mana mana, IInventoryContent inventory)
         {
-            Health = health;
-            Mana = mana;
+            ActualHealth = health;
+            ActualMana = mana;
             Inventory = inventory;
         }
 
-        public Health Health { get; }
+        public Health ActualHealth { get; }
 
-        public Mana Mana { get; }
+        public Mana ActualMana { get; }
 
         public IInventoryContent Inventory { get; }
+
+        public IHealth Health { get => ActualHealth; }
+
+        public IMana Mana { get => ActualMana; }
     }
 }

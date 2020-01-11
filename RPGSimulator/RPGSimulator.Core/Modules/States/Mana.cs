@@ -1,12 +1,13 @@
-﻿using System;
+﻿using RPGSimulator.Common.Character.States;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGSimulator.Common.Character.States
+namespace RPGSimulator.Core.Modules.States
 {
-    public class Mana
+    public class Mana : IMana
     {
         public Mana(int maxMana, int currentMana)
         {

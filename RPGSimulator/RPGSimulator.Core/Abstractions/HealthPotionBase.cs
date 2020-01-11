@@ -1,5 +1,5 @@
 ﻿using RPGSimulator.Common.Character;
-using RPGSimulator.Common.Character.States;
+using RPGSimulator.Core.Modules.States;
 using RPGSimulator.Common.Contracts;
 
 namespace RPGSimulator.Common.Potions.HealthPotions
@@ -17,7 +17,7 @@ namespace RPGSimulator.Common.Potions.HealthPotions
 
         public void Use(ICharacter target)
         {
-            Health characterHealth = target.Health;
+            Health characterHealth = target.Health as Health;
 
             characterHealth.CurrentHealth += CalculateHealingAmount();
 

@@ -42,20 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character\ICharacter.cs" />
-    <Compile Include="Character\States\Health.cs" />
-    <Compile Include="Character\States\Mana.cs" />
+    <Compile Include="Character\Jobs\IJobFactory.cs" />
+    <Compile Include="Character\Jobs\JobType.cs" />
+    <Compile Include="Character\States\IHealth.cs" />
+    <Compile Include="Character\States\IMana.cs" />
     <Compile Include="Contracts\IBot.cs" />
     <Compile Include="Contracts\IGameController.cs" />
     <Compile Include="Contracts\Inventory\IInventoryContent.cs" />
     <Compile Include="Contracts\Inventory\IItem.cs" />
-    <Compile Include="Contracts\IPotion.cs" />
-    <Compile Include="Contracts\IUsable.cs" />
-    <Compile Include="Potions\HealthPotions\HealthPotionBase.cs" />
-    <Compile Include="Potions\HealthPotions\SmallHealthPotion.cs" />
-    <Compile Include="Potions\ItemType.cs" />
-    <Compile Include="Potions\ManaPotions\ManaPotionBase.cs" />
-    <Compile Include="Potions\ManaPotions\SmallManaPotion.cs" />
-    <Compile Include="Potions\PotionType.cs" />
+    <Compile Include="Items\IPotion.cs" />
+    <Compile Include="Items\ItemType.cs" />
+    <Compile Include="Items\IUsable.cs" />
+    <Compile Include="Items\PotionType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
