@@ -8,7 +8,8 @@ namespace RPGSimulator.Common.Contracts
         ICharacter Self { get; }
         ILimitedCharacter Enemy { get; }
 
-        void UseSkillOnTarget(ISkill skill, ICharacter target);
+        void NormalAttack(ICharacter target);
+        void UseSkill(ISkill skill, ICharacter target);
         void UsePotionOnSelf(IPotion potion);
     }
 }

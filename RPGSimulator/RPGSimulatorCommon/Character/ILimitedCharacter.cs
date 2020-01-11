@@ -10,6 +10,8 @@ namespace RPGSimulator.Common.Character
 {
     public interface ILimitedCharacter
     {
+        string Name { get; }
+
         IHealth Health { get; }
 
         IMana Mana { get; }

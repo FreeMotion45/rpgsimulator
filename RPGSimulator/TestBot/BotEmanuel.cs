@@ -18,6 +18,7 @@ namespace TestBot
         public void DoTurn(IGameController game)
         {
             Console.WriteLine("Emanuel is pro!");
+            game.
         }
     }
 }

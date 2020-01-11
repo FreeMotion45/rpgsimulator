@@ -51,6 +51,7 @@
     <Compile Include="Modules\Inventory.cs" />
     <Compile Include="Modules\Potions\HealthPotions\SmallHealthPotion.cs" />
     <Compile Include="Modules\Potions\ManaPotions\SmallManaPotion.cs" />
+    <Compile Include="Modules\States\GameState.cs" />
     <Compile Include="Modules\States\Health.cs" />
     <Compile Include="Modules\States\Mana.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
