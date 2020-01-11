@@ -23,5 +23,10 @@ namespace RPGSimulator.Common.Potions.ManaPotions
         }        
 
         protected abstract int CalculateManaAmount();
+
+        public override string ToString()
+        {
+            return "Small mana potion (20 MP)";
+        }
     }
 }

@@ -22,5 +22,10 @@ namespace RPGSimulator.Common.Potions.HealthPotions
         }
 
         protected abstract int CalculateHealingAmount();
+
+        public override string ToString()
+        {
+            return "Small health potion (20 HP)";
+        }
     }
 }
