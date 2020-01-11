@@ -12,9 +12,10 @@ namespace RPGSimulator.Core.Abstractions
     {
         void Attack(Character self, Character target);
         void UseSpecialAbility(Character self, Character target);
-        void AddBonusAttributes(Character self);        
-
-        int MinimumDamage { get; set; }
-        int MaximumDamage { get; set; }
+        void AddBonusAttributes(Character self);
+        
+        SkillBase Skill { get; }
+        int MinimumDamage { get; }
+        int MaximumDamage { get; }
     }
 }

@@ -44,8 +44,8 @@
     <Compile Include="Abstractions\HealthPotionBase.cs" />
     <Compile Include="Abstractions\IInventory.cs" />
     <Compile Include="Abstractions\IJobExtended.cs" />
-    <Compile Include="Abstractions\ISkillExtended.cs" />
     <Compile Include="Abstractions\ManaPotionBase.cs" />
+    <Compile Include="Abstractions\SkillBase.cs" />
     <Compile Include="Modules\Character.cs" />
     <Compile Include="Modules\Game.cs" />
     <Compile Include="Modules\Inventory.cs" />

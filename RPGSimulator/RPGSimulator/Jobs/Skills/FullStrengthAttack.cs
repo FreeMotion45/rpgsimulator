@@ -6,23 +6,16 @@ using System.Text;
 
 namespace RPGSimulator.Jobs.Skills
 {
-    class FullStrengthAttack : ISkillExtended
+    class FullStrengthAttack : SkillBase
     {
-        private Random random;
-
-        public FullStrengthAttack(Random random)
+        public FullStrengthAttack(string name, string description) : base(name, description)
         {
-            this.random = random;
         }
 
-        public string Name => "Full strength attack";
-
-        public string Description => "Attacks with double the power of a normal attack.";
-
-        public void UseSkill(Character self, Character target)
+        public override void UseSkill(Character self, Character target)
         {
-            int damage = random.Next(self.ActualJob.MinimumDamage * 2, self.ActualJob.MaximumDamage * 2);
-
+            int damage = Random.Next(self.ActualJob.MinimumDamage * 2, self.ActualJob.MaximumDamage * 2);
+            target.ActualHealth.DecreaseHealth(damage);
         }
     }
 }

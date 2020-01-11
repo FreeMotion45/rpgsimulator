@@ -24,6 +24,7 @@ namespace RPGSimulator.Core.Modules.Jobs
 
         public int MinimumDamage { get; set; }
         public int MaximumDamage { get; set; }
+        public SkillBase Skill { get; set; }
 
         public void AddBonusAttributes(Character self)
         {
@@ -38,8 +39,7 @@ namespace RPGSimulator.Core.Modules.Jobs
 
         public void UseSpecialAbility(Character self, Character target)
         {
-            target.ActualHealth.DecreaseHealth((int)(target.Health.CurrentHealth * 0.1));
-            target.ActualMana.DecreaseMana(target.ActualMana.CurrentMana / 2);
+            Skill.UseSkill(self, target);
         }
 
         private int CalculateAttackDamage()

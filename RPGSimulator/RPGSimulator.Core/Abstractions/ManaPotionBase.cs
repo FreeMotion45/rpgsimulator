@@ -20,12 +20,7 @@ namespace RPGSimulator.Common.Potions.ManaPotions
         {
             Mana characterMana = target.Mana as Mana;
 
-            characterMana.CurrentMana += CalculateManaAmount();
-
-            if (characterMana.CurrentMana > characterMana.MaxMana)
-            {
-                characterMana.CurrentMana = characterMana.MaxMana;
-            }
+            characterMana.IncreaseMana(CalculateManaAmount());
         }        
 
         protected abstract int CalculateManaAmount();

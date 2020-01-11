@@ -19,12 +19,7 @@ namespace RPGSimulator.Common.Potions.HealthPotions
         {
             Health characterHealth = target.Health as Health;
 
-            characterHealth.CurrentHealth += CalculateHealingAmount();
-
-            if (characterHealth.CurrentHealth > characterHealth.MaxHealth)
-            {
-                characterHealth.CurrentHealth = characterHealth.MaxHealth;
-            }
+            characterHealth.IncreaseHealth(CalculateHealingAmount());
         }
 
         protected abstract int CalculateHealingAmount();
