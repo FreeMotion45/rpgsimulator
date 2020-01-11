@@ -43,10 +43,13 @@
   <ItemGroup>
     <Compile Include="Abstractions\HealthPotionBase.cs" />
     <Compile Include="Abstractions\IInventory.cs" />
+    <Compile Include="Abstractions\IJob.cs" />
     <Compile Include="Abstractions\ManaPotionBase.cs" />
     <Compile Include="Modules\Character.cs" />
     <Compile Include="Modules\Game.cs" />
     <Compile Include="Modules\Inventory.cs" />
+    <Compile Include="Modules\Jobs\Mage.cs" />
+    <Compile Include="Modules\Jobs\Warrior.cs" />
     <Compile Include="Modules\Potions\HealthPotions\SmallHealthPotion.cs" />
     <Compile Include="Modules\Potions\ManaPotions\SmallManaPotion.cs" />
     <Compile Include="Modules\States\Health.cs" />
