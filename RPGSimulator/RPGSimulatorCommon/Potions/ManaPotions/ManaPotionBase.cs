@@ -17,14 +17,14 @@ namespace RPGSimulatorCommon.Potions.ManaPotions
 
         public void Use(ICharacter target)
         {
-            Mana characterMana = target.Mana;
+            IMana characterMana = target.Mana;
 
-            characterMana.CurrentMana += CalculateManaAmount();
+            //characterMana.CurrentMana += CalculateManaAmount();
 
-            if (characterMana.CurrentMana > characterMana.MaxMana)
-            {
-                characterMana.CurrentMana = characterMana.MaxMana;
-            }
+            //if (characterMana.CurrentMana > characterMana.MaxMana)
+            //{
+            //    characterMana.CurrentMana = characterMana.MaxMana;
+            //}
         }        
 
         protected abstract int CalculateManaAmount();

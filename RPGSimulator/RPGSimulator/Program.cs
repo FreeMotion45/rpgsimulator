@@ -1,4 +1,5 @@
 ﻿using RPGSimulator.Core.Modules;
+using RPGSimulator.Core.Modules.States;
 using RPGSimulatorCommon.Character;
 using RPGSimulatorCommon.Character.States;
 using RPGSimulatorCommon.Contracts;
@@ -20,7 +21,7 @@ namespace RPGSimulator
 
             ICharacter character1 = new Character(
                 new Health(100, 100),
-                new Mana(80, 80),
+                null,
                 inventory);
 
             IGameController game = new Game(character1, null);

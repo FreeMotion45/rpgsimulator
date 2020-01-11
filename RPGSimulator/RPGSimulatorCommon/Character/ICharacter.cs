@@ -5,8 +5,8 @@ namespace RPGSimulatorCommon.Character
 {
     public interface ICharacter
     {
-        Health Health { get; }
-        Mana Mana { get; }
+        IHealth Health { get; }
+        IMana Mana { get; }
         IInventoryContent Inventory { get; }
     }
 }

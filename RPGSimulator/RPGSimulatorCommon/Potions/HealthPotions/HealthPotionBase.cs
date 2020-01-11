@@ -17,14 +17,14 @@ namespace RPGSimulatorCommon.Potions.HealthPotions
 
         public void Use(ICharacter target)
         {
-            Health characterHealth = target.Health;
+            IHealth characterHealth = target.Health;
 
-            characterHealth.CurrentHealth += CalculateHealingAmount();
+            //characterHealth.CurrentHealth += CalculateHealingAmount();
 
-            if (characterHealth.CurrentHealth > characterHealth.MaxHealth)
-            {
-                characterHealth.CurrentHealth = characterHealth.MaxHealth;
-            }
+            //if (characterHealth.CurrentHealth > characterHealth.MaxHealth)
+            //{
+            //    characterHealth.CurrentHealth = characterHealth.MaxHealth;
+            //}
         }
 
         protected abstract int CalculateHealingAmount();
