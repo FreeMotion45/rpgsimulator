@@ -1,4 +1,5 @@
 ﻿using RPGSimulator.Core.Modules.Jobs;
+using RPGSimulator.Jobs.Skills;
 using RPGSimulatorCommon.Character.Jobs;
 using System;
 using System.Collections.Generic;
@@ -10,15 +11,12 @@ namespace RPGSimulator.Jobs
     {
         public IJob CreateJob(JobType jobType)
         {
-            switch (jobType)
+            return jobType switch
             {
-                case JobType.Warrior:
-                    return new Warrior();
-                case JobType.Mage:
-                    return new Mage();
-                default:
-                    return null;
-            }
+                JobType.Warrior => new Warrior(new FullStrengthAttack("Full strength attack", "Attack with double the normal power")),
+                JobType.Mage => new Mage(new ManaReduction("Mana reduction", "Removes 10% of your enemie's current HP and 50% of his current MP")),
+                _ => null,
+            };
         }
     }
 }

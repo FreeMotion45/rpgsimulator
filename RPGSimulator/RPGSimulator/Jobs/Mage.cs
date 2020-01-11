@@ -9,42 +9,34 @@ using RPGSimulatorCommon.Character.Jobs;
 
 namespace RPGSimulator.Core.Modules.Jobs
 {
-    public class Mage : IJobExtended
+    public class Mage : JobBase
     {
-        public readonly Random random;
+        public readonly Random _random;
 
-        public Mage()
+        public Mage(SkillBase skill) : base(skill, 5, 11, JobType.Mage)
         {
-            MinimumDamage = 5;
-            MaximumDamage = 11;
-            random = new Random();
+            _random = new Random();
         }
 
-        public JobType JobType => JobType.Mage;
-
-        public int MinimumDamage { get; set; }
-        public int MaximumDamage { get; set; }
-        public SkillBase Skill { get; set; }
-
-        public void AddBonusAttributes(Character self)
+        public override void AddBonusAttributes(Character self)
         {
             self.ActualMana.IncreaseMaxMana((int)(self.Mana.MaxMana * 1.3));
             self.ActualMana.IncreaseMana(self.ActualMana.MaxMana);           
         }
 
-        public void Attack(Character self, Character target)
+        public override void Attack(Character self, Character target)
         {
             target.ActualHealth.DecreaseHealth(CalculateAttackDamage());
         }
 
-        public void UseSpecialAbility(Character self, Character target)
+        public override void UseSpecialAbility(Character self, Character target)
         {
             Skill.UseSkill(self, target);
         }
 
         private int CalculateAttackDamage()
         {
-            return random.Next(MinimumDamage, MaximumDamage);
+            return _random.Next(MinimumDamage, MaximumDamage);
         }
     }
 }

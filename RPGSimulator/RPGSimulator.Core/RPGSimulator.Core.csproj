@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Abstractions\HealthPotionBase.cs" />
     <Compile Include="Abstractions\IInventory.cs" />
-    <Compile Include="Abstractions\IJobExtended.cs" />
+    <Compile Include="Abstractions\JobBase.cs" />
     <Compile Include="Abstractions\ManaPotionBase.cs" />
     <Compile Include="Abstractions\SkillBase.cs" />
     <Compile Include="Modules\Character.cs" />

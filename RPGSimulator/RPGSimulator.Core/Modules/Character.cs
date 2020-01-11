@@ -25,7 +25,7 @@ namespace RPGSimulator.Core.Modules
 
         public Mana ActualMana { get; }
 
-        public IJobExtended ActualJob { get; }
+        public JobBase ActualJob { get; }
 
         public IInventoryContent Inventory { get; }
 

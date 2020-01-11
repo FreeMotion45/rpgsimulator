@@ -10,40 +10,34 @@ using RPGSimulatorCommon.Character.Jobs;
 
 namespace RPGSimulator.Core.Modules.Jobs
 {
-    public class Warrior : IJobExtended
+    public class Warrior : JobBase
     {
-        public readonly Random random;
+        public readonly Random _random;
 
-        public Warrior()
+        public Warrior(SkillBase skill) : base(skill, 8, 13, JobType.Warrior)
         {
-            random = new Random();
+            _random = new Random();
         }
 
-        public JobType JobType => JobType.Warrior;
-
-        public int MinimumDamage { get; set; }
-        public int MaximumDamage { get; set; }
-        public SkillBase Skill { get; set; }
-
-        public void AddBonusAttributes(Character self)
+        public override void AddBonusAttributes(Character self)
         {
             self.ActualHealth.IncreaseMaxHealth((int)(self.Health.MaxHealth * 1.2));
             self.ActualHealth.IncreaseHealth(self.ActualHealth.MaxHealth);
         }
 
-        public void Attack(Character self, Character target)
+        public override void Attack(Character self, Character target)
         {
             target.ActualHealth.DecreaseHealth(CalculateAttackDamage());
         }
 
-        public void UseSpecialAbility(Character self, Character target)
+        public override void UseSpecialAbility(Character self, Character target)
         {
             Skill.UseSkill(self, target);
         }
 
         private int CalculateAttackDamage()
         {
-            return random.Next(MinimumDamage, MaximumDamage);
+            return _random.Next(MinimumDamage, MaximumDamage);
         }
     }
 }
