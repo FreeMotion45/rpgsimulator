@@ -9,10 +9,13 @@ namespace RPGSimulator.Core.Modules
 {
     public class Game : IGameController
     {
+        private bool _didAct;
+
         public Game(ICharacter you, ICharacter enemy)
         {
             Self = you;
             Enemy = enemy;
+            _didAct = false;
             GameState = GameState.Ready;
         }
 
@@ -26,17 +29,44 @@ namespace RPGSimulator.Core.Modules
 
         public void UsePotionOnSelf(IPotion potion)
         {
+            ExceptIfAlreadyActed();
             potion.Use(Self);
+            _didAct = true;
+            EvaluateGameState();
         }        
 
-        public void UseSkill(ISkill skill, ICharacter target)
+        public void UseSkill(ISkill skill, ILimitedCharacter target)
         {
+            ExceptIfAlreadyActed();
             ((SkillBase) (skill)).UseSkill(ActualSelf, target as Character);
+            _didAct = true;
+            EvaluateGameState();
         }
 
-        public void NormalAttack(ICharacter target)
+        public void NormalAttack(ILimitedCharacter target)
         {
+            ExceptIfAlreadyActed();
             (Self.Job as JobBase).Attack(ActualSelf, target as Character);
+            _didAct = true;
+            EvaluateGameState();
+        }
+
+        private void ExceptIfAlreadyActed()
+        {
+            if (_didAct)
+            {
+                throw new InvalidOperationException("Bot tried to act more than once per turn!");
+            }
+        }
+
+        private void EvaluateGameState()
+        {
+            if (Enemy.Health.CurrentHealth == 0 || Self.Health.CurrentHealth == 0)
+            {
+                GameState = GameState.Finished;
+            }
+
+            _didAct = false;
         }
     }
 }

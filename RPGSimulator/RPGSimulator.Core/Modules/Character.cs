@@ -21,6 +21,8 @@ namespace RPGSimulator.Core.Modules
             Inventory = inventory;
         }
 
+        public string Name { get; }
+
         public Health ActualHealth { get; set; }
 
         public Mana ActualMana { get; set; }
