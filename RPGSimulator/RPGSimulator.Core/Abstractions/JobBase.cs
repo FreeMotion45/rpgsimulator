@@ -29,5 +29,10 @@ namespace RPGSimulator.Core.Abstractions
         public abstract void Attack(Character self, Character target);
         public abstract void UseSpecialAbility(Character self, Character target);
         public abstract void AddBonusAttributes(Character self);
+
+        public override string ToString()
+        {
+            return JobType.ToString();
+        }
     }
 }

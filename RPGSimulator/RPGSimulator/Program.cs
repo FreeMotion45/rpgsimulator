@@ -8,6 +8,8 @@ using RPGSimulator.Common.Potions.ManaPotions;
 using RPGSimulator.Core.Modules.States;
 using System;
 using TestBot;
+using RPGSimulator.Jobs;
+using RPGSimulator.Core.Abstractions;
 
 namespace RPGSimulator
 {
@@ -15,18 +17,20 @@ namespace RPGSimulator
     {
         static void Main(string[] args)
         {
+            JobFactory jobFactory = new JobFactory();
             IInventoryContent inventory = new Inventory();
             inventory.Items.Add(new SmallHealthPotion());
             inventory.Items.Add(new SmallManaPotion());
 
-            ICharacter character1 = new Character(
+            Character character1 = new Character(
                 new Health(100, 100),
                 new Mana(80, 80),
-                inventory);                
+                inventory);                            
 
             IGameController game = new Game(character1, null);
             
             IBot bot = new BotSean();
+            character1.ActualJob = bot.ChooseJob(jobFactory) as JobBase;
             bot.DoTurn(game);
         }
     }

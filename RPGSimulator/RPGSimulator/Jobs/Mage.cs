@@ -20,7 +20,7 @@ namespace RPGSimulator.Core.Modules.Jobs
 
         public override void AddBonusAttributes(Character self)
         {
-            self.ActualMana.IncreaseMaxMana((int)(self.GetMana().MaxMana * 1.3));
+            self.ActualMana.IncreaseMaxMana((int)(self.Mana.MaxMana * 1.3));
             self.ActualMana.IncreaseMana(self.ActualMana.MaxMana);           
         }
 

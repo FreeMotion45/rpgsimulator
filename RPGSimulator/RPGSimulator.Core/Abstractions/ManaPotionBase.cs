@@ -18,7 +18,7 @@ namespace RPGSimulator.Common.Potions.ManaPotions
 
         public void Use(ICharacter target)
         {
-            Mana characterMana = target.GetMana() as Mana;
+            Mana characterMana = target.Mana as Mana;
             characterMana.IncreaseMana(CalculateManaAmount());
         }        
 
