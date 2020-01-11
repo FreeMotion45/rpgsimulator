@@ -1,10 +1,10 @@
 ﻿using RPGSimulator.Core.Modules;
-using RPGSimulatorCommon.Character;
-using RPGSimulatorCommon.Character.States;
-using RPGSimulatorCommon.Contracts;
-using RPGSimulatorCommon.Contracts.Inventory;
-using RPGSimulatorCommon.Potions.HealthPotions;
-using RPGSimulatorCommon.Potions.ManaPotions;
+using RPGSimulator.Common.Character;
+using RPGSimulator.Common.Character.States;
+using RPGSimulator.Common.Contracts;
+using RPGSimulator.Common.Contracts.Inventory;
+using RPGSimulator.Common.Potions.HealthPotions;
+using RPGSimulator.Common.Potions.ManaPotions;
 using System;
 using TestBot;
 

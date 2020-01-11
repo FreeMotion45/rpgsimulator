@@ -39,3 +39,11 @@ C:\Users\Sean\Desktop\Projects\rpgsimulator\RPGSimulator\RPGSimulator\obj\Debug\
 C:\Users\Sean\Desktop\Projects\rpgsimulator\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.csproj.CopyComplete
 C:\Users\Sean\Desktop\Projects\rpgsimulator\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.dll
 C:\Users\Sean\Desktop\Projects\rpgsimulator\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.pdb
+D:\Local\Github\Repositories\rpgsimulator\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulator.Core.dll
+D:\Local\Github\Repositories\rpgsimulator\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulatorCommon.dll
+D:\Local\Github\Repositories\rpgsimulator\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\TestBot.dll
+D:\Local\Github\Repositories\rpgsimulator\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulator.Core.pdb
+D:\Local\Github\Repositories\rpgsimulator\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\RPGSimulatorCommon.pdb
+D:\Local\Github\Repositories\rpgsimulator\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\TestBot.pdb
+D:\Local\Github\Repositories\rpgsimulator\RPGSimulator\RPGSimulator\bin\Debug\netcoreapp3.0\TestBot.dll.config
+D:\Local\Github\Repositories\rpgsimulator\RPGSimulator\RPGSimulator\obj\Debug\netcoreapp3.0\RPGSimulator.csproj.CopyComplete

@@ -1,5 +1,5 @@
 ﻿
-namespace RPGSimulatorCommon.Potions.ManaPotions
+namespace RPGSimulator.Common.Potions.ManaPotions
 {
     public class SmallManaPotion : ManaPotionBase
     {

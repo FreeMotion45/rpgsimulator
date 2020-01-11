@@ -1,5 +1,5 @@
 ﻿
-namespace RPGSimulatorCommon.Contracts.Inventory
+namespace RPGSimulator.Common.Contracts.Inventory
 {
     public interface IItem : IUsable
     {

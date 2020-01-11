@@ -1,7 +1,7 @@
-﻿using RPGSimulatorCommon.Contracts.Inventory;
-using RPGSimulatorCommon.Potions;
+﻿using RPGSimulator.Common.Contracts.Inventory;
+using RPGSimulator.Common.Potions;
 
-namespace RPGSimulatorCommon.Contracts
+namespace RPGSimulator.Common.Contracts
 {
     public interface IPotion : IItem
     {

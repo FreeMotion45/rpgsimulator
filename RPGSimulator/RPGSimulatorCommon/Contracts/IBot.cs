@@ -1,5 +1,5 @@
 ﻿
-namespace RPGSimulatorCommon.Contracts
+namespace RPGSimulator.Common.Contracts
 {
     public interface IBot
     {

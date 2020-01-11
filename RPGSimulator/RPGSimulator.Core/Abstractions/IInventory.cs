@@ -1,5 +1,5 @@
-﻿using RPGSimulatorCommon.Contracts;
-using RPGSimulatorCommon.Contracts.Inventory;
+﻿using RPGSimulator.Common.Contracts;
+using RPGSimulator.Common.Contracts.Inventory;
 
 namespace RPGSimulator.Core.Abstractions
 {

@@ -1,6 +1,6 @@
-﻿using RPGSimulatorCommon.Character;
+﻿using RPGSimulator.Common.Character;
 
-namespace RPGSimulatorCommon.Contracts
+namespace RPGSimulator.Common.Contracts
 {
     public interface IUsable
     {

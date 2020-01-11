@@ -1,8 +1,8 @@
-﻿using RPGSimulatorCommon.Character;
-using RPGSimulatorCommon.Character.States;
-using RPGSimulatorCommon.Contracts;
+﻿using RPGSimulator.Common.Character;
+using RPGSimulator.Common.Character.States;
+using RPGSimulator.Common.Contracts;
 
-namespace RPGSimulatorCommon.Potions.ManaPotions
+namespace RPGSimulator.Common.Potions.ManaPotions
 {
     public abstract class ManaPotionBase : IPotion
     {

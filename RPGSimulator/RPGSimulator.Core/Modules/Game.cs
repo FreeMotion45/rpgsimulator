@@ -1,5 +1,5 @@
-﻿using RPGSimulatorCommon.Character;
-using RPGSimulatorCommon.Contracts;
+﻿using RPGSimulator.Common.Character;
+using RPGSimulator.Common.Contracts;
 using System;
 
 namespace RPGSimulator.Core.Modules

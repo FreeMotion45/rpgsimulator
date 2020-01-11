@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace RPGSimulatorCommon.Contracts.Inventory
+namespace RPGSimulator.Common.Contracts.Inventory
 {
     public interface IInventoryContent
     {

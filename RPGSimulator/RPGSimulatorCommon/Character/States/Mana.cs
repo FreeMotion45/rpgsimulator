@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGSimulatorCommon.Character.States
+namespace RPGSimulator.Common.Character.States
 {
     public class Mana
     {

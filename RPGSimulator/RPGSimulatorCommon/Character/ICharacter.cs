@@ -1,7 +1,7 @@
-﻿using RPGSimulatorCommon.Character.States;
-using RPGSimulatorCommon.Contracts.Inventory;
+﻿using RPGSimulator.Common.Character.States;
+using RPGSimulator.Common.Contracts.Inventory;
 
-namespace RPGSimulatorCommon.Character
+namespace RPGSimulator.Common.Character
 {
     public interface ICharacter
     {

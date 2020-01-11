@@ -1,6 +1,6 @@
-﻿using RPGSimulatorCommon.Character;
-using RPGSimulatorCommon.Character.States;
-using RPGSimulatorCommon.Contracts.Inventory;
+﻿using RPGSimulator.Common.Character;
+using RPGSimulator.Common.Character.States;
+using RPGSimulator.Common.Contracts.Inventory;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,4 @@
-﻿using RPGSimulatorCommon.Contracts;
+﻿using RPGSimulator.Common.Contracts;
 using System.Linq;
 
 namespace TestBot

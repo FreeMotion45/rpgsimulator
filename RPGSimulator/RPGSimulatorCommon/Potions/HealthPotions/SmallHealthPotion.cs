@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGSimulatorCommon.Potions.HealthPotions
+namespace RPGSimulator.Common.Potions.HealthPotions
 {
     public class SmallHealthPotion : HealthPotionBase
     {

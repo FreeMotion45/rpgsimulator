@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj": {}
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj",
+        "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj",
         "projectName": "RPGSimulator.Core",
-        "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj",
+        "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
-                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
               }
             }
           }
@@ -24,31 +24,28 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj",
+        "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj",
         "projectName": "RPGSimulator.Common",
-        "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+        "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj": {
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
+        "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
         "projectName": "RPGSimulator",
-        "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
-        "packagesPath": "C:\\Users\\Sean\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator\\obj\\",
+        "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
+        "packagesPath": "C:\\Users\\Emanuel\\.nuget\\packages\\",
+        "outputPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Sean\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,14 +58,14 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
-                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj"
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj"
               },
-              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
-                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
               },
-              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
-                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj"
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj"
               }
             }
           }
@@ -91,44 +88,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj",
+        "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj",
         "projectName": "TestBot",
-        "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj",
+        "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
-                "projectPath": "C:\\Users\\Sean\\Desktop\\Projects\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
               }
             }
           }

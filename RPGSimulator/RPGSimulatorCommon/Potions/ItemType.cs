@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGSimulatorCommon.Potions
+namespace RPGSimulator.Common.Potions
 {
     public enum ItemType
     {

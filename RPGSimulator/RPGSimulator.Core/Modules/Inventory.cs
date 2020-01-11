@@ -1,6 +1,6 @@
 ﻿using RPGSimulator.Core.Abstractions;
-using RPGSimulatorCommon.Contracts;
-using RPGSimulatorCommon.Contracts.Inventory;
+using RPGSimulator.Common.Contracts;
+using RPGSimulator.Common.Contracts.Inventory;
 using System.Collections.Generic;
 using System.Linq;
 
