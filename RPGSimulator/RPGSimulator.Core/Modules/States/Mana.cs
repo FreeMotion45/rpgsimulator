@@ -15,7 +15,32 @@ namespace RPGSimulator.Core.Modules.States
             CurrentMana = currentMana;
         }
 
-        public int MaxMana { get; set; }
-        public int CurrentMana { get; set; }
+        public int MaxMana { get; private set; }
+        public int CurrentMana { get; private set; }
+
+        public void IncreaseMana(int amount)
+        {
+            CurrentMana += amount;
+
+            if (CurrentMana > MaxMana)
+            {
+                CurrentMana = MaxMana;
+            }
+        }
+
+        public void DecreaseMana(int amount)
+        {
+            CurrentMana -= amount;
+
+            if (CurrentMana < 0)
+            {
+                CurrentMana = 0;
+            }
+        }
+
+        public void IncreaseMaxMana(int maxMana)
+        {
+            MaxMana = maxMana;
+        }
     }
 }

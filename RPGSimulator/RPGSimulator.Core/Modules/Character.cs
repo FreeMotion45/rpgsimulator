@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RPGSimulator.Common.Character.States;
+using RPGSimulator.Core.Abstractions;
+using RPGSimulatorCommon.Character.Jobs;
 
 namespace RPGSimulator.Core.Modules
 {
@@ -23,10 +25,14 @@ namespace RPGSimulator.Core.Modules
 
         public Mana ActualMana { get; }
 
+        public IJobExtended ActualJob { get; }
+
         public IInventoryContent Inventory { get; }
 
         public IHealth Health { get => ActualHealth; }
 
         public IMana Mana { get => ActualMana; }
+
+        public IJob Job { get => ActualJob; }
     }
 }

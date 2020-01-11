@@ -25,30 +25,23 @@ namespace RPGSimulator.Core.Modules.Jobs
 
         public JobType JobType => JobType.Warrior;
 
+        public int MinimumDamage { get; set; }
+        public int MaximumDamage { get; set; }
+
         public void AddBonusAttributes(Character self)
         {
-            self.ActualHealth.MaxHealth = (int)(self.Health.MaxHealth * 1.2);
-            self.ActualHealth.CurrentHealth = self.Health.MaxHealth;
+            self.ActualHealth.IncreaseMaxHealth((int)(self.Health.MaxHealth * 1.2));
+            self.ActualHealth.IncreaseHealth(self.ActualHealth.MaxHealth);
         }
 
-        public void Attack(Character target)
+        public void Attack(Character self, Character target)
         {
-            target.ActualHealth.CurrentHealth -= CalculateAttackDamage();
+            self.ActualJob.Attack(self, target);
         }
 
-        public void UseSpecialAbility(Character target)
+        public void UseSpecialAbility(Character self, Character target)
         {
-            target.ActualHealth.CurrentHealth -= CalculateSpecialAbilityDamage();
-        }
-
-        private int CalculateAttackDamage()
-        {
-            return random.Next(_minimumDamage, _maximumDamage);
-        }
-
-        private int CalculateSpecialAbilityDamage()
-        {
-            return random.Next(_minimumDamage * 2, _maximumDamage * 2);
+            self.ActualJob.UseSpecialAbility(self, target);
         }
     }
 }

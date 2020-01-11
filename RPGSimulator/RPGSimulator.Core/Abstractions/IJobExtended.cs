@@ -10,8 +10,11 @@ namespace RPGSimulator.Core.Abstractions
 {
     public interface IJobExtended : IJob
     {
-        void Attack(Character target);
-        void UseSpecialAbility(Character target);
-        void AddBonusAttributes(Character self);
+        void Attack(Character self, Character target);
+        void UseSpecialAbility(Character self, Character target);
+        void AddBonusAttributes(Character self);        
+
+        int MinimumDamage { get; set; }
+        int MaximumDamage { get; set; }
     }
 }

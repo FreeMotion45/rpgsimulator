@@ -15,7 +15,32 @@ namespace RPGSimulator.Core.Modules.States
             CurrentHealth = currentHealth;
         }
 
-        public int MaxHealth { get; set; }
-        public int CurrentHealth { get; set; }
+        public int MaxHealth { get; private set; }
+        public int CurrentHealth { get; private set; }
+
+        public void IncreaseHealth(int amount)
+        {
+            CurrentHealth += amount;
+
+            if (CurrentHealth > MaxHealth)
+            {
+                CurrentHealth = MaxHealth;
+            }
+        }
+
+        public void DecreaseHealth(int amount)
+        {
+            CurrentHealth -= amount;
+
+            if (CurrentHealth < 0)
+            {
+                CurrentHealth = 0;
+            }
+        }
+
+        public void IncreaseMaxHealth(int maxHealth)
+        {
+            MaxHealth = maxHealth;
+        }        
     }
 }
