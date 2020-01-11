@@ -20,48 +20,10 @@ namespace RPGSimulator
         public List<IBot> Bots { get; }
         public JobFactory JobFactory { get; }
 
-        public void SimulateTwoBots(IBot bot1, IBot bot2)
+        public void SimulateTwoBots(IBot Bot1, IBot Bot2)
         {
-            Character bot1Character = new Character(bot1.ChooseName(),
-                                                    new Health(200, 200),
-                                                    new Mana(100, 100),
-                                                    new Inventory())
-            {
-                ActualJob = bot1.ChooseJob(JobFactory) as JobBase
-            };
-
-            Character bot2Character = new Character(bot2.ChooseName(),
-                                        new Health(200, 200),
-                                        new Mana(100, 100),
-                                        new Inventory())
-            {
-                ActualJob = bot2.ChooseJob(JobFactory) as JobBase
-            };
-
-            Game game = new Game(bot1Character, bot2Character);
-            game.GameState = GameState.Running;
-
-            while (game.GameState != GameState.Finished)
-            {
-                bot1.DoTurn(game);
-                Console.WriteLine(bot2Character.Name + " " + bot2Character.Health.CurrentHealth);
-
-                if (game.GameState != GameState.Finished)
-                {
-                    game.CyclePlayers();
-                    bot2.DoTurn(game);
-                    game.CyclePlayers();
-                }
-            }
-
-            if (bot1Character.Health.CurrentHealth == 0)
-            {
-                Console.WriteLine(bot2Character.Name + " has won!");
-            }
-            else
-            {
-                Console.WriteLine(bot1Character.Name + " has won!");
-            }
+            Simulation simulation = new Simulation(Bot1, Bot2, JobFactory);
+            simulation.Run();
         }
     }
 }

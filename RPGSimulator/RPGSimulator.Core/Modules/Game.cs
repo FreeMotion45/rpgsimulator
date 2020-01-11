@@ -16,7 +16,7 @@ namespace RPGSimulator.Core.Modules
             Self = you;
             Enemy = enemy;
             _didAct = false;
-            GameState = GameState.Ready;
+            GameState = GameState.Running;
         }
 
         public ICharacter Self { get; set; }
