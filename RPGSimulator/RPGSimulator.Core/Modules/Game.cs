@@ -1,5 +1,7 @@
 ﻿using RPGSimulator.Common.Character;
 using RPGSimulator.Common.Contracts;
+using RPGSimulator.Core.Abstractions;
+using RPGSimulatorCommon.Character.Jobs.Skills;
 using System;
 
 namespace RPGSimulator.Core.Modules
@@ -14,16 +16,16 @@ namespace RPGSimulator.Core.Modules
 
         public ICharacter Self { get; }
 
-        public ICharacter Enemy { get; }
+        public ILimitedCharacter Enemy { get; }
 
-        public void UsePotion(IPotion potion)
+        public void UsePotionOnSelf(IPotion potion)
         {
             potion.Use(Self);
-        }
+        }        
 
-        public void UseSkill()
+        public void UseSkillOnTarget(ISkill skill, ICharacter target)
         {
-            throw new NotImplementedException();
+            ((SkillBase) (skill)).UseSkill(Self as Character, target as Character);
         }
     }
 }

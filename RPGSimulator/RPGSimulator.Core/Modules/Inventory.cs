@@ -20,14 +20,14 @@ namespace RPGSimulator.Core.Modules
             Items.Add(itemToAdd);
         }
 
-        public List<IPotion> GetPotions()
-        {
-            return Items.Where(item => item is IPotion).Select(item => item as IPotion).ToList();
-        }
-
         public void RemoveItem(IItem itemToRemove)
         {
             Items.Remove(itemToRemove);
+        }
+
+        public List<IPotion> GetPotions()
+        {
+            return Items.Where(item => item is IPotion).Select(item => item as IPotion).ToList();
         }
     }
 }

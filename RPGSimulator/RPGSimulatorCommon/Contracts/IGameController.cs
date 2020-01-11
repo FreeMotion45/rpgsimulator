@@ -1,13 +1,14 @@
 ﻿using RPGSimulator.Common.Character;
+using RPGSimulatorCommon.Character.Jobs.Skills;
 
 namespace RPGSimulator.Common.Contracts
 {
     public interface IGameController
     {
         ICharacter Self { get; }
-        ICharacter Enemy { get; }
+        ILimitedCharacter Enemy { get; }
 
-        void UseSkill();
-        void UsePotion(IPotion potion);
+        void UseSkillOnTarget(ISkill skill, ICharacter target);
+        void UsePotionOnSelf(IPotion potion);
     }
 }

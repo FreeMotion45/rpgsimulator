@@ -31,7 +31,10 @@ namespace RPGSimulator.Core.Modules
 
         public IHealth Health { get => ActualHealth; }
 
-        public IMana Mana { get => ActualMana; }
+        public IMana GetMana()
+        {
+            return ActualMana;
+        }
 
         public IJob Job { get => ActualJob; }
     }

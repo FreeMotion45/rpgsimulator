@@ -22,7 +22,7 @@ namespace RPGSimulator
             ICharacter character1 = new Character(
                 new Health(100, 100),
                 new Mana(80, 80),
-                inventory);
+                inventory);                
 
             IGameController game = new Game(character1, null);
             

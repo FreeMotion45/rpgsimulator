@@ -8,6 +8,9 @@ namespace RPGSimulator.Common.Potions
 {
     public enum ItemType
     {
-
+        Potion,
+        Scroll,
+        Weapon,
+        Armor
     }
 }

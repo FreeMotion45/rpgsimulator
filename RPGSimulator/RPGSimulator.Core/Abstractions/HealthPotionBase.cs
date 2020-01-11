@@ -18,7 +18,6 @@ namespace RPGSimulator.Common.Potions.HealthPotions
         public void Use(ICharacter target)
         {
             Health characterHealth = target.Health as Health;
-
             characterHealth.IncreaseHealth(CalculateHealingAmount());
         }
 

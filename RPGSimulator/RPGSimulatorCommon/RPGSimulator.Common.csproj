@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character\ICharacter.cs" />
+    <Compile Include="Character\ILimitedCharacter.cs" />
     <Compile Include="Character\Jobs\IJob.cs" />
     <Compile Include="Character\Jobs\IJobFactory.cs" />
     <Compile Include="Character\Jobs\JobType.cs" />
