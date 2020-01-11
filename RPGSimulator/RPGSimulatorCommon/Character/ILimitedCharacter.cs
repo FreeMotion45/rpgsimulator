@@ -12,7 +12,7 @@ namespace RPGSimulator.Common.Character
     {
         IHealth Health { get; }
 
-        IMana GetMana();
+        IMana Mana { get; }
 
         IJob Job { get; }
     }
