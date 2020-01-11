@@ -25,7 +25,7 @@ namespace RPGSimulator
 
         public void Run()
         {
-            List<Bot> bots = CreateBotList();
+            List<Bot> bots = CreateBots();
             Bot starter = ChooseStarter(bots);
             List<Bot> otherBots = FindOtherBots(starter, bots);
 
@@ -67,7 +67,7 @@ namespace RPGSimulator
             return bots[random.Next(1, 2)];
         }
 
-        private List<Bot> CreateBotList()
+        private List<Bot> CreateBots()
         {
             List<Bot> bots = new List<Bot>();
 
