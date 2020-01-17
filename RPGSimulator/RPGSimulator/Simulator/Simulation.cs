@@ -13,7 +13,6 @@ namespace RPGSimulator.Simulator
     class Simulation
     {
         public List<Bot> ParticipatingBots { get; }
-        public JobFactory JobFactory { get; }
 
         public Simulation(List<Bot> participatingBots)
         {
