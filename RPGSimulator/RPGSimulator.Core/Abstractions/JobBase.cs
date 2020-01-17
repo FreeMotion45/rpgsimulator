@@ -1,6 +1,6 @@
 ﻿using RPGSimulator.Core.Modules;
-using RPGSimulatorCommon.Character.Jobs;
-using RPGSimulatorCommon.Character.Jobs.Skills;
+using RPGSimulator.Common.Character.Jobs;
+using RPGSimulator.Common.Character.Jobs.Skills;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +32,23 @@ namespace RPGSimulator.Core.Abstractions
         public abstract void Attack(Character self, Character target);
         public abstract void UseSpecialAbility(Character self, Character target);
         public abstract void AddBonusAttributes(Character self);
+
+        public bool HasSkill(SkillName skillName)
+        {
+            return ActualSkills.Find(skill => skill.Name == skillName) != null;
+        }
+
+        public ISkill GetSkill(SkillName skillName)
+        {
+            if (HasSkill(skillName))
+            {
+                return ActualSkills.Find(skill => skill.Name == skillName);
+            }
+            else
+            {
+                throw new InvalidOperationException($"Character with job={JobType} doesn't have skill where name={skillName}");
+            }
+        }
 
         public override string ToString()
         {

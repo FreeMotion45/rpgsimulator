@@ -1,5 +1,5 @@
 ﻿using RPGSimulator.Common.Character.States;
-using RPGSimulatorCommon.Character.Jobs;
+using RPGSimulator.Common.Character.Jobs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

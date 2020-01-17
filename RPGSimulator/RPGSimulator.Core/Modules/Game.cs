@@ -2,8 +2,9 @@
 using RPGSimulator.Common.Contracts;
 using RPGSimulator.Core.Abstractions;
 using RPGSimulator.Core.Modules.States;
-using RPGSimulatorCommon.Character.Jobs.Skills;
+using RPGSimulator.Common.Character.Jobs.Skills;
 using System;
+using System.Collections.Generic;
 
 namespace RPGSimulator.Core.Modules
 {
@@ -39,10 +40,16 @@ namespace RPGSimulator.Core.Modules
         public void UseSkill(ISkill skill, ILimitedCharacter target)
         {
             ExceptIfAlreadyActed();
-            ((SkillBase) (skill)).UseSkill(ActualSelf, target as Character);
-            Console.WriteLine(Self + " used " + skill + " on " + target);
-            _didAct = true;
-            EvaluateGameState();
+            if (ActualSelf.ActualJob.HasSkill(skill.Name))
+            {
+                ((SkillBase)(skill)).UseSkill(ActualSelf, target as Character);
+                Console.WriteLine(Self + " used " + skill + " on " + target);
+                _didAct = true;
+            }
+            else
+            {
+                throw new InvalidOperationException($"Player tried to use skill={skill.Name} but his job doesn't have this skill!");
+            }
         }
 
         public void UseNormalAttack(ILimitedCharacter target)
@@ -51,7 +58,6 @@ namespace RPGSimulator.Core.Modules
             (Self.Job as JobBase).Attack(ActualSelf, target as Character);
             Console.WriteLine(Self + " used normal attack on " + target);
             _didAct = true;
-            EvaluateGameState();
         }
 
         public void CyclePlayers()

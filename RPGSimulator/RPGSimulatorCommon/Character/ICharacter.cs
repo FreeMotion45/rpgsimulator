@@ -1,6 +1,6 @@
 ﻿using RPGSimulator.Common.Character.States;
 using RPGSimulator.Common.Contracts.Inventory;
-using RPGSimulatorCommon.Character.Jobs;
+using RPGSimulator.Common.Character.Jobs;
 
 namespace RPGSimulator.Common.Character
 {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RPGSimulator.Common.Character.States;
 using RPGSimulator.Core.Abstractions;
-using RPGSimulatorCommon.Character.Jobs;
+using RPGSimulator.Common.Character.Jobs;
 
 namespace RPGSimulator.Core.Modules
 {

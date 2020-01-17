@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RPGSimulator.Core.Abstractions;
 using RPGSimulator.Core.Modules;
-using RPGSimulatorCommon.Character.Jobs;
+using RPGSimulator.Common.Character.Jobs;
 
 namespace RPGSimulator.Core.Modules.Jobs
 {
