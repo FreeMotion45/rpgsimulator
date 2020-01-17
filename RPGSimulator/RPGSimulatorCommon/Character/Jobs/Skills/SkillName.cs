@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RPGSimulator.Common.Character.Jobs.Skills
 {
-    public interface ISkill
+    public enum SkillName
     {
-        SkillName Name { get; }
-        string Description { get; }
+        FullStrengthAttack,
+        ManaReduction,
     }
 }
