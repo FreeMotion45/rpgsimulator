@@ -1,5 +1,5 @@
 ﻿using RPGSimulator.Common.Character;
-using RPGSimulatorCommon.Character.Jobs.Skills;
+using RPGSimulator.Common.Character.Jobs.Skills;
 
 namespace RPGSimulator.Common.Contracts
 {

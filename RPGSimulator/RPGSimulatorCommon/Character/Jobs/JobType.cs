@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGSimulatorCommon.Character.Jobs
+namespace RPGSimulator.Common.Character.Jobs
 {
     public enum JobType
     {

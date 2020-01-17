@@ -1,4 +1,5 @@
-﻿using RPGSimulator.Core.Abstractions;
+﻿using RPGSimulator.Common.Character.Jobs.Skills;
+using RPGSimulator.Core.Abstractions;
 using RPGSimulator.Core.Modules;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ namespace RPGSimulator.Jobs.Skills
 {
     class FullStrengthAttack : SkillBase
     {
-        public FullStrengthAttack(string name, string description) : base(name, description)
+        public FullStrengthAttack(string description) : base(SkillName.FullStrengthAttack, description)
         {
         }
 

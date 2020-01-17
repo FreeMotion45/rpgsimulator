@@ -47,6 +47,7 @@
     <Compile Include="Character\Jobs\IJobFactory.cs" />
     <Compile Include="Character\Jobs\JobType.cs" />
     <Compile Include="Character\Jobs\Skills\ISkill.cs" />
+    <Compile Include="Character\Jobs\Skills\SkillName.cs" />
     <Compile Include="Character\States\IHealth.cs" />
     <Compile Include="Character\States\IMana.cs" />
     <Compile Include="Contracts\IBot.cs" />
