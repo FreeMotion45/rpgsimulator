@@ -35,6 +35,16 @@ namespace RPGSimulator.Simulator
             }
 
             Console.WriteLine(FindWinner(ParticipatingBots).Character + " has won the game!");
+            AssignStats(ParticipatingBots);
+        }
+
+        private void AssignStats(List<Bot> bots)
+        {
+            Bot winner = bots.Find(bot => bot.Character.Health.CurrentHealth > 0);
+            winner.Wins++;
+
+            Bot loser = bots.Find(bot => bot.Character.Health.CurrentHealth == 0);
+            loser.Defeats++;
         }
 
         private Bot FindWinner(List<Bot> bots)

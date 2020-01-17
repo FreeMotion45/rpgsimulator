@@ -18,5 +18,9 @@ namespace RPGSimulator.Bots
         public Character Character { get; }
         public IBot Controller { get; }
         public List<Bot> EnemyHistory { get; }
+
+        public int Wins { get; set; }
+        public int Defeats { get; set; }
+        public int Ties { get; set; }
     }
 }
