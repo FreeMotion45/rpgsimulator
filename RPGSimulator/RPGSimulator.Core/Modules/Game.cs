@@ -9,16 +9,15 @@ using System.Collections.Generic;
 namespace RPGSimulator.Core.Modules
 {
     public class Game : IGameController
-    {
-        private bool _didAct;
-
+    {        
         public Game(ICharacter you, ICharacter enemy)
         {
             Self = you;
             Enemy = enemy;
-            _didAct = false;
+            DidCurrentPlayerAct = false;
             GameState = GameState.Running;
         }
+        public bool DidCurrentPlayerAct { get; private set; }
 
         public ICharacter Self { get; set; }
         public Character ActualSelf { get => Self as Character; }
@@ -33,8 +32,7 @@ namespace RPGSimulator.Core.Modules
             ExceptIfAlreadyActed();
             potion.Use(Self);
             Console.WriteLine(Self + " drank " + potion);
-            _didAct = true;
-            EvaluateGameState();
+            DidCurrentPlayerAct = true;
         }        
 
         public void UseSkill(ISkill skill, ILimitedCharacter target)
@@ -44,7 +42,7 @@ namespace RPGSimulator.Core.Modules
             {
                 ((SkillBase)(skill)).UseSkill(ActualSelf, target as Character);
                 Console.WriteLine(Self + " used " + skill + " on " + target);
-                _didAct = true;
+                DidCurrentPlayerAct = true;
             }
             else
             {
@@ -57,7 +55,7 @@ namespace RPGSimulator.Core.Modules
             ExceptIfAlreadyActed();
             (Self.Job as JobBase).Attack(ActualSelf, target as Character);
             Console.WriteLine(Self + " used normal attack on " + target);
-            _didAct = true;
+            DidCurrentPlayerAct = true;
         }
 
         public void CyclePlayers()
@@ -69,20 +67,10 @@ namespace RPGSimulator.Core.Modules
 
         private void ExceptIfAlreadyActed()
         {
-            if (_didAct)
+            if (DidCurrentPlayerAct)
             {
                 throw new InvalidOperationException("Bot tried to act more than once per turn!");
             }
-        }
-
-        private void EvaluateGameState()
-        {
-            if (Enemy.Health.CurrentHealth == 0 || Self.Health.CurrentHealth == 0)
-            {
-                GameState = GameState.Finished;
-            }
-
-            _didAct = false;
         }
     }
 }

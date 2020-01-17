@@ -30,14 +30,25 @@ namespace RPGSimulator.Simulator
             {
                 Bot currentBot = ParticipatingBots.Find(bot => game.ActualSelf == bot.Character);
                 currentBot.Controller.DoTurn(game);
-                game.CyclePlayers();                
+                game.CyclePlayers();
+                RevaluateGameState(game);
             }
 
             Console.WriteLine(FindWinner(ParticipatingBots).Character + " has won the game!");
-            AssignStats(ParticipatingBots);
+            AssignWinsDefeats(ParticipatingBots);
         }
 
-        private void AssignStats(List<Bot> bots)
+        private void RevaluateGameState(Game game)
+        {
+            if (game.Enemy.Health.CurrentHealth == 0 || game.Self.Health.CurrentHealth == 0)
+            {
+                game.GameState = GameState.Finished;
+            }
+
+            game.DidCurrentPlayerAct = false;
+        }
+
+        private void AssignWinsDefeats(List<Bot> bots)
         {
             Bot winner = bots.Find(bot => bot.Character.Health.CurrentHealth > 0);
             winner.Wins++;
