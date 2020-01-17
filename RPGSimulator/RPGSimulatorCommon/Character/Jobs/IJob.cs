@@ -11,5 +11,6 @@ namespace RPGSimulatorCommon.Character.Jobs
     {
         JobType JobType { get; }
         ISkill SpecialAbility { get; }
+        IEnumerable<ISkill> Skills { get; }
     }
 }

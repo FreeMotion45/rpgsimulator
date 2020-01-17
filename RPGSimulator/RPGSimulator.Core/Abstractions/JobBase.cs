@@ -13,19 +13,22 @@ namespace RPGSimulator.Core.Abstractions
     {
         public JobBase(SkillBase skill, int minimumDamage, int maximumDamage, JobType jobType)
         {
-            Skill = skill;
+            ActualSpecialAbility = skill;
             MinimumDamage = minimumDamage;
             MaximumDamage = maximumDamage;
             JobType = jobType;
         }
 
-        public SkillBase Skill { get; }
         public int MinimumDamage { get; }
         public int MaximumDamage { get; }
         public JobType JobType { get; }
 
-        public ISkill SpecialAbility { get => Skill; }
+        public List<SkillBase> ActualSkills { get; }
+        public IEnumerable<ISkill> Skills { get => ActualSkills; }
 
+        public SkillBase ActualSpecialAbility { get; }
+        public ISkill SpecialAbility { get => ActualSpecialAbility; }
+        
         public abstract void Attack(Character self, Character target);
         public abstract void UseSpecialAbility(Character self, Character target);
         public abstract void AddBonusAttributes(Character self);

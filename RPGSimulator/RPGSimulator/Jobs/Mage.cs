@@ -31,7 +31,7 @@ namespace RPGSimulator.Core.Modules.Jobs
 
         public override void UseSpecialAbility(Character self, Character target)
         {
-            Skill.UseSkill(self, target);
+            ActualSpecialAbility.UseSkill(self, target);
         }
 
         private int CalculateAttackDamage()
