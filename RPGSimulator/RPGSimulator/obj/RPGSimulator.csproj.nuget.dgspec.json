@@ -1,0 +1,121 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj": {}
+  },
+  "projects": {
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj",
+        "projectName": "RPGSimulator.Core",
+        "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj",
+        "projectName": "RPGSimulator.Common",
+        "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
+        "projectName": "RPGSimulator",
+        "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
+        "packagesPath": "C:\\Users\\Emanuel\\.nuget\\packages\\",
+        "outputPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj"
+              },
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              },
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj",
+        "projectName": "TestBot",
+        "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+                "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

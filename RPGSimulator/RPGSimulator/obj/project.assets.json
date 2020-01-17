@@ -1,0 +1,129 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "RPGSimulator.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RPGSimulator.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPGSimulator.Common.dll": {}
+        }
+      },
+      "RPGSimulator.Core/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "RPGSimulator.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RPGSimulator.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPGSimulator.Core.dll": {}
+        }
+      },
+      "TestBot/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "RPGSimulator.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TestBot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestBot.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RPGSimulator.Common/1.0.0": {
+      "type": "project",
+      "path": "../RPGSimulatorCommon/RPGSimulator.Common.csproj",
+      "msbuildProject": "../RPGSimulatorCommon/RPGSimulator.Common.csproj"
+    },
+    "RPGSimulator.Core/1.0.0": {
+      "type": "project",
+      "path": "../RPGSimulator.Core/RPGSimulator.Core.csproj",
+      "msbuildProject": "../RPGSimulator.Core/RPGSimulator.Core.csproj"
+    },
+    "TestBot/1.0.0": {
+      "type": "project",
+      "path": "../TestBot/TestBot.csproj",
+      "msbuildProject": "../TestBot/TestBot.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "RPGSimulator.Common >= 1.0.0",
+      "RPGSimulator.Core >= 1.0.0",
+      "TestBot >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Emanuel\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
+      "projectName": "RPGSimulator",
+      "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\RPGSimulator.csproj",
+      "packagesPath": "C:\\Users\\Emanuel\\.nuget\\packages\\",
+      "outputPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj": {
+              "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulator.Core\\RPGSimulator.Core.csproj"
+            },
+            "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj": {
+              "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\RPGSimulatorCommon\\RPGSimulator.Common.csproj"
+            },
+            "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj": {
+              "projectPath": "D:\\Local\\Github\\Repositories\\rpgsimulator\\RPGSimulator\\TestBot\\TestBot.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
