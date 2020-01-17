@@ -10,6 +10,7 @@ namespace RPGSimulator.Common.Character.Jobs
     public interface IJob
     {
         JobType JobType { get; }
+        int Defense { get; }
         ISkill SpecialAbility { get; }
         IEnumerable<ISkill> Skills { get; }
     }

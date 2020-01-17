@@ -19,14 +19,14 @@ namespace RPGSimulator.Common.Potions.ManaPotions
         public void Use(ICharacter target)
         {
             Mana characterMana = target.Mana as Mana;
-            characterMana.IncreaseMana(CalculateManaAmount());
+            characterMana.IncreaseMana(CalculateManaAmount(target));
         }        
 
-        protected abstract int CalculateManaAmount();
+        protected abstract int CalculateManaAmount(ICharacter target);
 
         public override string ToString()
         {
-            return "Small mana potion (20 MP)";
+            return "ManaPotion";
         }
     }
 }

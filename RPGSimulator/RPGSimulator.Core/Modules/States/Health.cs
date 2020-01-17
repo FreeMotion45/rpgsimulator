@@ -18,6 +18,14 @@ namespace RPGSimulator.Core.Modules.States
         public int MaxHealth { get; private set; }
         public int CurrentHealth { get; private set; }
 
+        public void DealDamage(int amount)
+        {
+            if (amount > 0)
+            {
+                DecreaseHealth(amount);
+            }
+        }
+
         public void IncreaseHealth(int amount)
         {
             CurrentHealth += amount;

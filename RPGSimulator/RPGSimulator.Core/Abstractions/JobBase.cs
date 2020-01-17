@@ -19,6 +19,7 @@ namespace RPGSimulator.Core.Abstractions
             JobType = jobType;
         }
 
+        public int Defense { get; set; }
         public int MinimumDamage { get; }
         public int MaximumDamage { get; }
         public JobType JobType { get; }

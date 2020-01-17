@@ -16,7 +16,7 @@ namespace RPGSimulator.Jobs.Skills
         public override void UseSkill(Character self, Character target)
         {
             int damage = Random.Next(self.ActualJob.MinimumDamage * 2, self.ActualJob.MaximumDamage * 2);
-            target.ActualHealth.DecreaseHealth(damage);
+            target.ActualHealth.DealDamage(damage - target.Job.Defense);
         }
     }
 }

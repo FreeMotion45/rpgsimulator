@@ -18,10 +18,10 @@ namespace RPGSimulator.Common.Potions.HealthPotions
         public void Use(ICharacter target)
         {
             Health characterHealth = target.Health as Health;
-            characterHealth.IncreaseHealth(CalculateHealingAmount());
+            characterHealth.IncreaseHealth(CalculateHealingAmount(target));
         }
 
-        protected abstract int CalculateHealingAmount();
+        protected abstract int CalculateHealingAmount(ICharacter target);
 
         public override string ToString()
         {
