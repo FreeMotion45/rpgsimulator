@@ -9,6 +9,7 @@ namespace RPGSimulator.Common.Potions
     public enum PotionType
     {
         Mana,
-        Health
+        Health,
+        Elixir,
     }
 }

@@ -1,22 +1,22 @@
 ﻿using RPGSimulator.Common.Character;
+using RPGSimulator.Common.Potions.HealthPotions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPGSimulator.Common.Potions.HealthPotions
+namespace RPGSimulator.Core.Modules.Potions.HealthPotions
 {
-    public class SmallHealthPotion : HealthPotionBase
+    class BigHealthPotion : HealthPotionBase
     {
-        public SmallHealthPotion() : base("SmallHealth")
+        public BigHealthPotion() : base("BigHealth")
         {
 
         }
-
         protected override int CalculateHealingAmount(ICharacter target)
         {
-            return 20;
+            return 120;
         }
     }
 }
