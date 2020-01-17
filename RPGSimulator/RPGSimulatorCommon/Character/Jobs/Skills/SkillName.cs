@@ -10,5 +10,6 @@ namespace RPGSimulator.Common.Character.Jobs.Skills
     {
         FullStrengthAttack,
         ManaReduction,
+        HealthSteal,
     }
 }

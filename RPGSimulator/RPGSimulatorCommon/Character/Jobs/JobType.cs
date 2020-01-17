@@ -9,6 +9,7 @@ namespace RPGSimulator.Common.Character.Jobs
     public enum JobType
     {
         Mage,
-        Warrior
+        Warrior,
+        Assassin,
     }
 }

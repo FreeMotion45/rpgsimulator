@@ -11,12 +11,15 @@ namespace RPGSimulator.Core.Abstractions
 {
     public abstract class JobBase : IJob
     {
+        private Random _random;
+
         public JobBase(SkillBase skill, int minimumDamage, int maximumDamage, JobType jobType)
         {
             ActualSpecialAbility = skill;
             MinimumDamage = minimumDamage;
             MaximumDamage = maximumDamage;
             JobType = jobType;
+            _random = new Random();
         }
 
         public int Defense { get; set; }
